@@ -4,7 +4,7 @@ const Navigation = ({ className }) => (
   <ul className={className}>
     <li>
       <NavigationLink
-        href="/about"
+        href="/"
         className="mr-10"
       >
         Blog

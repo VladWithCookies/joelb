@@ -1,11 +1,18 @@
 import clsx from 'clsx';
 
-const Author = ({ image, name, className }) => (
+import Image from './Image';
+
+const Author = ({
+  className,
+  author: {
+    avatar,
+    name
+  },
+}) => (
   <div className={clsx('flex items-center', className)}>
-    <img
-      src={image}
-      className="h-14 rounded-full"
-      alt=""
+    <Image
+      src={avatar.url}
+      className="h-14 w-14 rounded-full"
     />
     <p className="font-medium ml-4">
       {name}
