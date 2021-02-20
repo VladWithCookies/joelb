@@ -1,26 +1,13 @@
-import { isEmpty } from 'lodash';
-
-import INDEX from '../queries';
+import withApollo from '../lib/apolloClient';
 import Main from '../layouts/Main';
-import withApolloClient from '../lib/apolloClient';
 import FeaturedArticle from '../sections/FeaturedArticle';
 import LatestArticles from '../sections/LatestArticles';
 
-const IndexPage = ({ loading, data: { articles, featuredArticles } }) => {
-  const [featuredArticle] = featuredArticles.items;
+const IndexPage = () => (
+  <Main title="Blog">
+    <FeaturedArticle />
+    <LatestArticles />
+  </Main>
+);
 
-  return (
-    <Main title="Home">
-      {featuredArticle && <FeaturedArticle article={featuredArticle} />}
-      {!isEmpty(articles.items) && <LatestArticles articles={articles.items} />}
-    </Main>
-  );
-};
-
-IndexPage.getInitialProps = async ({ apolloClient }) => {
-  const { data, loading } = await apolloClient.query({ query: INDEX });
-
-  return { data, loading };
-};
-
-export default withApolloClient(IndexPage);
+export default withApollo({ ssr: true })(IndexPage);
