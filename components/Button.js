@@ -1,17 +1,17 @@
 import clsx from 'clsx';
 
-const Button = ({ children, inverted, className, as, ...props }) => {
+const Button = ({ children, inverted, disabled, className, as, ...props }) => {
   const Component = as || 'button';
 
   return (
     <Component
       {...props}
+      disabled={disabled}
       className={clsx(
-        'border-2 shadow-sm p-2',
-        'hover:shadow-lg',
-        'disabled:opacity-50 disabled:bg-white disabled:shadow-none',
-        'transition duration-300 ease-in-out',
-        inverted ? 'border-white hover:bg-white hover:text-black' : 'border-black hover:bg-black hover:text-white',
+        'border-2 shadow-sm p-2 disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 ease-in-out',
+        { 'hover:shadow-lg': !disabled },
+        inverted ? 'border-white' : 'border-black',
+        !disabled ? (inverted ? 'hover:bg-white hover:text-black' : 'hover:bg-black hover:text-white') : undefined,
         className,
       )}
     >

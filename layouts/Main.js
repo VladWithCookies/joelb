@@ -12,7 +12,7 @@ const Main = ({ title, children }) => (
     </Head>
     <div className="flex flex-col h-screen">
       <Header />
-      <main className="flex flex-col flex-grow bg-gray-100 pt-14">
+      <main className="flex flex-col flex-grow bg-gray-100 pt-4 md:pt-14">
         <h1 hidden>
           Joel Baker Ministry Blog
         </h1>

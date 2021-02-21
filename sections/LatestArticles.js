@@ -16,7 +16,7 @@ const LatestArticles = () => {
   return (
     <section className="mx-auto mt-8 mb-16 md:my-16">
       <div className="container px-4">
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {map(items, item => (
             <li key={item.slug}>
               <Article article={item} />

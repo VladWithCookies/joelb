@@ -26,7 +26,7 @@ const Article = ({
       />
       <div className="flex flex-col justify-between p-4 h-72">
         <div>
-          <Title className="text-2xl">
+          <Title>
             {title}
           </Title>
           <Meta className="mt-4">

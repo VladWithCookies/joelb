@@ -1,4 +1,3 @@
-import Logo from '../components/Logo';
 import Legal from '../components/Legal';
 import Credits from '../components/Credits';
 import Copyright from '../components/Copyright';
@@ -8,7 +7,7 @@ const Footer = () => (
   <footer className="bg-black text-white">
     <div className="container mx-auto px-4">
       <div className="py-8">
-        <Logo />
+        Joel Baker Ministry
       </div>
       <hr />
       <div className="flex py-8 leading-loose">

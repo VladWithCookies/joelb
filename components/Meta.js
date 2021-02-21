@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 const Meta = ({ className, children }) => (
-  <p className={clsx('text-gray-400', className)}>
+  <p className={clsx('text-sm md:text-base lg:text-lg text-gray-400', className)}>
     {children}
   </p>
 );

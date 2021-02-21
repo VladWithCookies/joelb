@@ -11,15 +11,15 @@ const Pagination = ({ offset, total, fetchMore, className }) => {
   const currentPage = ceil(offset / PAGINATION_LIMIT) + 1;
   const updateQuery = (_, { fetchMoreResult }) => fetchMoreResult;
 
-  const handleNext = () => fetchMore({
-    variables: { offset: offset + PAGINATION_LIMIT },
-    updateQuery,
-  });
+  const handleNext = () => {
+    fetchMore({ variables: { offset: offset + PAGINATION_LIMIT }, updateQuery });
+    window.scrollTo(0, 0);
+  }
 
-  const handlePrev = () => fetchMore({
-    variables: { offset: offset - PAGINATION_LIMIT },
-    updateQuery,
-  });
+  const handlePrev = () => {
+    fetchMore({ variables: { offset: offset - PAGINATION_LIMIT }, updateQuery });
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div className={clsx('flex justify-between items-center w-full', className)}>

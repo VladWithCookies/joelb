@@ -35,11 +35,11 @@ const FeaturedArticle = () => {
           <article className="grid grid-cols-1 md:grid-cols-2 shadow-sm cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg mt-16">
             <Image
               src={cover.url}
-              className="w-full h-96"
+              className="w-full h-72 md:h-96"
             />
             <div className="flex flex-col justify-between bg-white h-72 p-4 md:h-96 md:p-8">
               <div>
-                <Title className="text-2xl lg:text-4xl">
+                <Title className="lg:text-4xl">
                   {title}
                 </Title>
                 <Meta className="mt-4">
