@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { ceil } from 'lodash';
+import { useRouter } from 'next/router';
 import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -7,6 +8,7 @@ import { PAGINATION_LIMIT } from '../constants';
 import Button from './Button';
 
 const Pagination = ({ offset, total, fetchMore, className }) => {
+  const { push, pathname } = useRouter();
   const totalPages = ceil(total / PAGINATION_LIMIT);
   const currentPage = ceil(offset / PAGINATION_LIMIT) + 1;
   const updateQuery = (_, { fetchMoreResult }) => fetchMoreResult;
@@ -14,11 +16,13 @@ const Pagination = ({ offset, total, fetchMore, className }) => {
   const handleNext = () => {
     fetchMore({ variables: { offset: offset + PAGINATION_LIMIT }, updateQuery });
     window.scrollTo(0, 0);
+    push(`${pathname}?page=${currentPage + 1}`);
   }
 
   const handlePrev = () => {
     fetchMore({ variables: { offset: offset - PAGINATION_LIMIT }, updateQuery });
     window.scrollTo(0, 0);
+    push(`${pathname}?page=${currentPage - 1}`);
   }
 
   return (

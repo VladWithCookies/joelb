@@ -1,9 +1,11 @@
-import clsx from 'clsx';
+import NextImage from 'next/image'
 
-const Image = ({ src, className }) => (
-  <img
-    src={src}
-    className={clsx('object-cover', className)}
+const Image = ({ className, ...props }) => (
+  <NextImage
+    {...props}
+    layout="fill"
+    objectFit="cover"
+    className={className}
     alt=""
   />
 );

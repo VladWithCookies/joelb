@@ -10,10 +10,12 @@ const Author = ({
   },
 }) => (
   <div className={clsx('flex items-center', className)}>
-    <Image
-      src={avatar.url}
-      className="h-14 w-14 rounded-full"
-    />
+    <div className="relative h-12 w-12 ">
+      <Image
+        src={avatar.url}
+        className="rounded-full"
+      />
+    </div>
     <p className="font-medium ml-4">
       {name}
     </p>

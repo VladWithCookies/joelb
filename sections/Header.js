@@ -4,7 +4,7 @@ import LanguageSelect from '../components/LanguageSelect';
 import MobileNavigation from '../components/MobileNavigation';
 
 const Header = () => (
-  <header className="bg-white shadow-sm fixed w-full">
+  <header className="bg-white shadow-sm fixed w-full z-10">
     <div className="container flex justify-between mx-auto p-4">
       <Logo />
       <div className="flex">

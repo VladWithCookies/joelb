@@ -11,14 +11,14 @@ export default graphql`
         author {
           name
           avatar {
-            url
+            url(transform: { height: 100, width: 100 })
           }
         }
         category {
           name
         }
         cover {
-          url
+          url(transform:{ height: 384, width: 624 })
         }
       }
     }

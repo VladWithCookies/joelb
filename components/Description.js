@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 const Description = ({ children, className }) => (
-  <p className={clsx('text-sm md:text-base h-20', className)}>
+  <p className={clsx('text-sm md:text-base text-gray-700 h-20', className)}>
     {children}
   </p>
 );

@@ -1,4 +1,5 @@
 import { map } from 'lodash';
+import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
 
 import { PAGINATION_LIMIT } from '../constants';
@@ -7,7 +8,14 @@ import Article from '../components/Article';
 import Pagination from '../components/Pagination';
 
 const LatestArticles = () => {
-  const { data, loading, fetchMore } = useQuery(ARTICLES, { variables: { limit: PAGINATION_LIMIT, offset: 0 } });
+  const { query: { page } } = useRouter();
+
+  const variables = {
+    limit: PAGINATION_LIMIT,
+    offset: page ? PAGINATION_LIMIT * (page - 1) : 0,
+  };
+
+  const { data, loading, fetchMore } = useQuery(ARTICLES, { variables });
 
   if (loading) return null;
 
