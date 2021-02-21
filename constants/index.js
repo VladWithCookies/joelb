@@ -5,4 +5,4 @@ export const API_URL = `https://graphql.contentful.com/content/v1/spaces/${proce
 
 export const CURRENT_YEAR = getYear(new Date());
 
-export const PAGINATION_LIMIT = 3;
+export const PAGINATION_LIMIT = 6;

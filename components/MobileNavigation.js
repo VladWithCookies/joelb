@@ -36,26 +36,17 @@ const MobileNavigation = () => {
         )}>
           <ul className="flex flex-col flex-grow items-center justify-evenly text-2xl py-10">
             <li>
-              <NavigationLink
-                href="/"
-                className=""
-              >
+              <NavigationLink href="/">
                 Blog
               </NavigationLink>
             </li>
             <li>
-              <NavigationLink
-                href="/videos"
-                className=""
-              >
+              <NavigationLink href="/videos">
                 Videos
               </NavigationLink>
             </li>
             <li>
-              <NavigationLink
-                href="/about"
-                className=""
-              >
+              <NavigationLink href="/about">
                 About
               </NavigationLink>
             </li>

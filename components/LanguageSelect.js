@@ -1,7 +1,10 @@
 import clsx from 'clsx';
 
 const LanguageSelect = ({ className }) => (
-  <select className={clsx('cursor-pointer bg-transparent', className)}>
+  <select
+    aria-label="Language"
+    className={clsx('cursor-pointer bg-transparent', className)}
+  >
     <option>
       English
     </option>
