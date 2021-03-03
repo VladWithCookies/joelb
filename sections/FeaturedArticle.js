@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import { useQuery } from '@apollo/client';
 
-import FEATURED_ARTICLES from '../queries/featuredArticles';
 import { asDate } from '../utils/dates';
 import Meta from '../components/Meta';
 import Image from '../components/Image';
@@ -9,9 +7,7 @@ import Title from '../components/Title';
 import Author from '../components/Author';
 import Description from '../components/Description';
 
-const FeaturedArticle = () => {
-  const { data, loading }  = useQuery(FEATURED_ARTICLES);
-
+const FeaturedArticle = ({ data, loading }) => {
   if (loading) return null;
 
   const {
