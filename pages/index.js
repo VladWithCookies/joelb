@@ -1,7 +1,7 @@
 const Index = () => null;
 
 export const getServerSideProps = async ({ res }) => {
-  res.setHeader('location', '/en');
+  res.setHeader('location', '/en/blog');
   res.statusCode = 302;
   res.end();
 

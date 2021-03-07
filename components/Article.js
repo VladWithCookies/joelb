@@ -1,6 +1,5 @@
-import Link from 'next/link';
-
 import { asDate } from 'utils/dates';
+import Link from './Link';
 import Meta from './Meta';
 import Image from './Image';
 import Title from './Title';
@@ -18,19 +17,19 @@ const Article = ({
     description,
   },
 }) => (
-  <Link href={`/articles/${slug}`}>
+  <Link href={`/blog/${slug}`}>
     <article className="bg-white cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg">
       <div className="relative w-full h-72">
         <Image src={cover.url} />
       </div>
       <div className="flex flex-col justify-between p-4 h-72">
         <div>
-          <Title>
-            {title}
-          </Title>
-          <Meta className="mt-4">
+          <Meta>
             {category.name} | {asDate(date)}
           </Meta>
+          <Title className="mt-4">
+            {title}
+          </Title>
           <Description className="mt-4">
             {description}
           </Description>

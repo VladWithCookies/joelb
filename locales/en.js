@@ -9,6 +9,7 @@ export default {
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',
     'blog.nextPosts': 'Next posts',
+    'blog.downloadDocument': 'Download document',
 
     'videos.videos': 'Videos',
 

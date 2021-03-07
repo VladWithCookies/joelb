@@ -37,7 +37,7 @@ const MobileNavigation = () => {
         )}>
           <ul className="flex flex-col flex-grow items-center justify-evenly text-2xl py-10">
             <li>
-              <NavigationLink href="/">
+              <NavigationLink href="/blog">
                 <FormattedMessage id="blog.blog" />
               </NavigationLink>
             </li>

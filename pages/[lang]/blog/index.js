@@ -1,4 +1,5 @@
 import Error from 'next/error';
+import { useIntl } from 'react-intl';
 import { isEmpty, get } from 'lodash';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
@@ -12,6 +13,7 @@ import FeaturedArticle from 'sections/FeaturedArticle';
 import LatestArticles from 'sections/LatestArticles';
 
 const IndexPage = () => {
+  const { formatMessage } = useIntl();
   const { query: { page, lang } } = useRouter();
 
   const variables = {
@@ -32,7 +34,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Main title="Blog">
+    <Main title={formatMessage({ id: 'blog.blog' })}>
       {isFeaturedArticleVisible && <FeaturedArticle {...featuredArticlesResponse} />}
       <LatestArticles {...articlesResponse} />
     </Main>

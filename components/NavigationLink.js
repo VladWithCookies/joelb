@@ -1,5 +1,6 @@
 import clsx from 'clsx';
-import Link from 'next/link';
+
+import Link from './Link';
 
 const NavigationLink = ({ href, children, className }) => (
   <Link href={href}>

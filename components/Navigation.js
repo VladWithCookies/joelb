@@ -6,7 +6,7 @@ const Navigation = ({ className }) => (
   <ul className={className}>
     <li>
       <NavigationLink
-        href="/"
+        href="/blog"
         className="mr-10"
       >
         <FormattedMessage id="blog.blog" />

@@ -1,8 +1,9 @@
-import Link from 'next/link';
 import { FormattedMessage } from 'react-intl';
 
+import Link from './Link';
+
 const Logo = () => (
-  <Link href="/">
+  <Link href="/blog">
     <a>
       <FormattedMessage id="app.joelBakerMinistry" />
     </a>
