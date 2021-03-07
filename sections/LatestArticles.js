@@ -1,11 +1,11 @@
-import { map } from 'lodash';
+import { map, isEmpty } from 'lodash';
 
-import { PAGINATION_LIMIT } from '../constants';
-import Article from '../components/Article';
-import Pagination from '../components/Pagination';
+import { PAGINATION_LIMIT } from 'constants/base';
+import Article from 'components/Article';
+import Pagination from 'components/Pagination';
 
 const LatestArticles = ({ data, loading, fetchMore }) => {
-  if (loading) return null;
+  if (loading || isEmpty(data.articleCollection.items)) return null;
 
   const { articleCollection: { items, offset, total } } = data;
 

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import Header from '../sections/Header';
-import Footer from '../sections/Footer';
+import Header from 'sections/Header';
+import Footer from 'sections/Footer';
 
 const Main = ({ title, children }) => (
   <>

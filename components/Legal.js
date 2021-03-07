@@ -1,15 +1,17 @@
+import { FormattedMessage } from 'react-intl';
+
 import NavigationLink from './NavigationLink';
 
 const Legal = () => (
   <ul>
     <li>
       <NavigationLink href="/terms">
-        Terms
+        <FormattedMessage id="app.terms" />
       </NavigationLink>
     </li>
     <li>
       <NavigationLink href="/privacy-policy">
-        Privacy Policy
+        <FormattedMessage id="app.privacyPolicy" />
       </NavigationLink>
     </li>
   </ul>

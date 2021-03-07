@@ -1,13 +1,15 @@
-import Legal from '../components/Legal';
-import Credits from '../components/Credits';
-import Copyright from '../components/Copyright';
-import Navigation from '../components/Navigation';
+import { FormattedMessage } from 'react-intl';
+
+import Legal from 'components/Legal';
+import Credits from 'components/Credits';
+import Copyright from 'components/Copyright';
+import Navigation from 'components/Navigation';
 
 const Footer = () => (
   <footer className="bg-black text-white">
     <div className="container mx-auto px-4">
       <div className="py-8">
-        Joel Baker Ministry
+        <FormattedMessage id="app.joelBakerMinistry" />
       </div>
       <hr />
       <div className="flex py-8 leading-loose">

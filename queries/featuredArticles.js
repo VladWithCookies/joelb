@@ -1,8 +1,8 @@
 import graphql from 'graphql-tag';
 
 export default graphql`
-  query featuredArticles {
-    articleCollection(where: { featured: true }) {
+  query featuredArticles($language: String!) {
+    articleCollection(where: { featured: true, language: $language }) {
       items {
         date
         slug

@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -37,17 +38,17 @@ const MobileNavigation = () => {
           <ul className="flex flex-col flex-grow items-center justify-evenly text-2xl py-10">
             <li>
               <NavigationLink href="/">
-                Blog
+                <FormattedMessage id="blog.blog" />
               </NavigationLink>
             </li>
             <li>
               <NavigationLink href="/videos">
-                Videos
+                <FormattedMessage id="videos.videos" />
               </NavigationLink>
             </li>
             <li>
               <NavigationLink href="/about">
-                About
+                <FormattedMessage id="about.about" />
               </NavigationLink>
             </li>
             <li>

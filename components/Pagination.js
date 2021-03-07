@@ -1,10 +1,11 @@
 import clsx from 'clsx';
 import { ceil } from 'lodash';
 import { useRouter } from 'next/router';
+import { FormattedMessage } from 'react-intl';
 import { faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { PAGINATION_LIMIT } from '../constants';
+import { PAGINATION_LIMIT } from 'constants/base';
 import Button from './Button';
 
 const Pagination = ({ offset, total, fetchMore, className }) => {
@@ -36,7 +37,7 @@ const Pagination = ({ offset, total, fetchMore, className }) => {
           className="mr-2"
           icon={faLongArrowAltLeft}
         />
-        Prev posts
+        <FormattedMessage id="blog.prevPosts" />
       </Button>
       <p className="text-xl">
         {currentPage}/{totalPages}
@@ -46,7 +47,7 @@ const Pagination = ({ offset, total, fetchMore, className }) => {
         onClick={handleNext}
         disabled={currentPage === totalPages}
       >
-        Next posts
+        <FormattedMessage id="blog.nextPosts" />
         <FontAwesomeIcon
           className="ml-2"
           icon={faLongArrowAltRight}

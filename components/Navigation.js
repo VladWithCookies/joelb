@@ -1,3 +1,5 @@
+import { FormattedMessage } from 'react-intl';
+
 import NavigationLink from './NavigationLink';
 
 const Navigation = ({ className }) => (
@@ -7,7 +9,7 @@ const Navigation = ({ className }) => (
         href="/"
         className="mr-10"
       >
-        Blog
+        <FormattedMessage id="blog.blog" />
       </NavigationLink>
     </li>
     <li>
@@ -15,7 +17,7 @@ const Navigation = ({ className }) => (
         href="/videos"
         className="mr-10"
       >
-        Videos
+        <FormattedMessage id="videos.videos" />
       </NavigationLink>
     </li>
     <li>
@@ -23,7 +25,7 @@ const Navigation = ({ className }) => (
         href="/about"
         className="mr-10"
       >
-        About
+        <FormattedMessage id="about.about" />
       </NavigationLink>
     </li>
   </ul>

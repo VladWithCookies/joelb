@@ -1,14 +1,15 @@
 import Link from 'next/link';
+import { isEmpty } from 'lodash';
 
-import { asDate } from '../utils/dates';
-import Meta from '../components/Meta';
-import Image from '../components/Image';
-import Title from '../components/Title';
-import Author from '../components/Author';
-import Description from '../components/Description';
+import { asDate } from 'utils/dates';
+import Meta from 'components/Meta';
+import Image from 'components/Image';
+import Title from 'components/Title';
+import Author from 'components/Author';
+import Description from 'components/Description';
 
 const FeaturedArticle = ({ data, loading }) => {
-  if (loading) return null;
+  if (loading || isEmpty(data.articleCollection.items)) return null;
 
   const {
     articleCollection: {

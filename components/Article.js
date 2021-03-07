@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { asDate } from '../utils/dates';
+import { asDate } from 'utils/dates';
 import Meta from './Meta';
 import Image from './Image';
 import Title from './Title';
