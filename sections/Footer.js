@@ -13,8 +13,8 @@ const Footer = () => (
       </div>
       <hr />
       <div className="flex py-8 leading-loose">
-        <Navigation className="w-1/4" />
-        <Legal className="w-1/4" />
+        <Navigation className="w-1/2 lg:w-1/4" />
+        <Legal className="w-1/2 lg:w-1/4" />
       </div>
       <div className="flex flex-col items-center">
         <Credits />

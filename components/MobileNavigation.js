@@ -1,5 +1,6 @@
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +9,21 @@ import LanguageSelect from './LanguageSelect';
 import NavigationLink from './NavigationLink';
 
 const MobileNavigation = () => {
+  const router = useRouter();
   const [isOpened, setIsOpened] = useState(false);
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      document.body.classList.remove('overflow-hidden')
+      setIsOpened(false);
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    }
+  }, []);
 
   const onToggleMenu = () => {
     isOpened ? document.body.classList.remove('overflow-hidden') : document.body.classList.add('overflow-hidden');

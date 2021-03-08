@@ -1,9 +1,7 @@
-import { getYear } from 'date-fns';
-
 export const CREDITS_LINK = 'https://vladwithcookies.github.io/';
 export const API_URL = `https://graphql.contentful.com/content/v1/spaces/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/master`;
 
-export const CURRENT_YEAR = getYear(new Date());
+export const CURRENT_YEAR = new Date().getFullYear();
 
 export const PAGINATION_LIMIT = 6;
 

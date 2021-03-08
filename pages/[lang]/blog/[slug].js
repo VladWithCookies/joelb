@@ -7,7 +7,7 @@ import withApollo from 'lib/apolloClient';
 import ARTICLE_DETAILS from 'queries/articleDetails';
 import ArticleDetails from 'sections/ArticleDetails';
 
-const Article = () => {
+const ArticlePage = () => {
   const { query: { slug } } = useRouter();
   const articleDetailsResponse = useQuery(ARTICLE_DETAILS, { variables: { slug }});
   const title = get(articleDetailsResponse, ['data', 'articleCollection', 'items', 0, 'title']);
@@ -19,4 +19,4 @@ const Article = () => {
   );
 };
 
-export default withApollo({ ssr: true })(Article);
+export default withApollo({ ssr: true })(ArticlePage);

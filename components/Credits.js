@@ -10,7 +10,7 @@ const Credits = () => (
     as="a"
     inverted
     target="_blank"
-    className="w-max"
+    className="w-full md:w-max"
     href={CREDITS_LINK}
     rel="noopener noreferrer"
   >

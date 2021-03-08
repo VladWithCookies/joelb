@@ -1,6 +1,6 @@
 import { isEmpty } from 'lodash';
+import { FormattedDate } from 'react-intl';
 
-import { asDate } from 'utils/dates';
 import Link from 'components/Link';
 import Meta from 'components/Meta';
 import Image from 'components/Image';
@@ -36,7 +36,7 @@ const FeaturedArticle = ({ data, loading }) => {
             <div className="flex flex-col justify-between bg-white h-72 p-4 md:h-96 md:p-8">
               <div>
                 <Meta>
-                  {category.name} | {asDate(date)}
+                  {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
                 </Meta>
                 <Title className="lg:text-4xl mt-4">
                   {title}

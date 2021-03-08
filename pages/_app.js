@@ -6,7 +6,7 @@ import locales from 'locales';
 const App = ({ Component, pageProps, router: { query: { lang } } }) => (
   <IntlProvider
     {...locales[lang]}
-    defaultLocale={locales.en.locale}
+    defaultLocale="en"
   >
     <Component {...pageProps} />
   </IntlProvider>

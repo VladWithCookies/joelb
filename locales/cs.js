@@ -1,18 +1,18 @@
 export default {
   locale: 'cs',
   messages: {
-    'app.joelBakerMinistry': 'Joel Baker Ministry CS',
-    'app.madeWithLoveBy': 'Made with love by CS',
-    'app.terms': 'Terms CS',
-    'app.privacyPolicy': 'Privacy Policy CS',
+    'app.joelBakerMinistry': 'Joel Baker Ministry',
+    'app.madeWithLoveBy': 'Vyrobeno s láskou podle',
+    'app.terms': 'Podmínky použití',
+    'app.privacyPolicy': 'Ochrana údajů',
 
-    'blog.blog': 'Blog CS',
-    'blog.prevPosts': 'Prev posts CS',
-    'blog.nextPosts': 'Next posts CS',
-    'blog.downloadDocument': 'Download document CS',
+    'blog.blog': 'Blog',
+    'blog.prevPosts': 'Předchozí',
+    'blog.nextPosts': 'Následující',
+    'blog.downloadDocument': 'Stáhnout dokument',
 
-    'videos.videos': 'Videos CS',
+    'videos.videos': 'Videa',
 
-    'about.about': 'About CS',
+    'about.about': 'O této službě',
   },
 };

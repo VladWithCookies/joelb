@@ -1,4 +1,5 @@
-import { asDate } from 'utils/dates';
+import { FormattedDate } from 'react-intl';
+
 import Link from './Link';
 import Meta from './Meta';
 import Image from './Image';
@@ -25,7 +26,7 @@ const Article = ({
       <div className="flex flex-col justify-between p-4 h-72">
         <div>
           <Meta>
-            {category.name} | {asDate(date)}
+            {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
           </Meta>
           <Title className="mt-4">
             {title}

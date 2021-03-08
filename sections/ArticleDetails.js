@@ -1,12 +1,10 @@
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedDate } from 'react-intl';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { asDate } from 'utils/dates';
 import Meta from 'components/Meta';
 import Image from 'components/Image';
 import Title from 'components/Title';
-import Author from 'components/Author';
 import Content from 'components/Content';
 import Button from 'components/Button';
 
@@ -34,8 +32,8 @@ const ArticleDetails = ({ loading, data }) => {
       </div>
       <div className="grid lg:grid-cols-3 grid-col-1 container mx-auto px-4">
         <div className="lg:col-span-2 my-8">
-          <Meta>
-            {category.name} | {asDate(date)}
+          <Meta className="text-gray-900">
+            {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
           </Meta>
           <Title className="text-2xl lg:text-4xl mt-4">
             {title}

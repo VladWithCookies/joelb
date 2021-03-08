@@ -1,4 +1,4 @@
-const Index = () => null;
+const IndexPage = () => null;
 
 export const getServerSideProps = async ({ res }) => {
   res.setHeader('location', '/en/blog');
@@ -8,4 +8,4 @@ export const getServerSideProps = async ({ res }) => {
   return { props: {} };
 };
 
-export default Index;
+export default IndexPage;

@@ -1,18 +1,18 @@
 export default {
   locale: 'sr',
   messages: {
-    'app.joelBakerMinistry': 'Joel Baker Ministry SR',
-    'app.madeWithLoveBy': 'Made with love by SR',
-    'app.terms': 'Terms SR',
-    'app.privacyPolicy': 'Privacy Policy SR',
+    'app.joelBakerMinistry': 'Služba Džoela Bejkera',
+    'app.madeWithLoveBy': 'Napravljeno s ljubavlju od',
+    'app.terms': 'Uslovi korišćenja',
+    'app.privacyPolicy': 'Pravila o privatnosti',
 
-    'blog.blog': 'Blog SR',
-    'blog.prevPosts': 'Prev posts SR',
-    'blog.nextPosts': 'Next posts SR',
-    'blog.downloadDocument': 'Download document SR',
+    'blog.blog': 'Blog',
+    'blog.prevPosts': 'Prethodne',
+    'blog.nextPosts': 'Sljedeće',
+    'blog.downloadDocument': 'Preuzmi dokument',
 
-    'videos.videos': 'Videos SR',
+    'videos.videos': 'Video zapisi',
 
-    'about.about': 'About SR',
+    'about.about': 'O stranici',
   },
 };
