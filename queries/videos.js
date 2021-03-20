@@ -6,7 +6,7 @@ export default graphql`
       offset: skip
       total
       items {
-        videoId
+        url
       }
     }
   }
