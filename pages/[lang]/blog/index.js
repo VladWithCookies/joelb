@@ -1,13 +1,12 @@
-import Error from 'next/error';
 import { useIntl } from 'react-intl';
-import { isEmpty, get } from 'lodash';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
 
-import { PAGINATION_LIMIT, AVAILABLE_LANGUAGES } from 'constants/base';
+import { PAGINATION_LIMIT } from 'constants/base';
 import ARTICLES from 'queries/articles';
 import FEATURED_ARTICLES from 'queries/featuredArticles';
 import withApollo from 'lib/apolloClient';
+import use404 from 'hooks/use404';
 import Main from 'layouts/Main';
 import FeaturedArticle from 'sections/FeaturedArticle';
 import LatestArticles from 'sections/LatestArticles';
@@ -24,17 +23,15 @@ const IndexPage = () => {
 
   const articlesResponse = useQuery(ARTICLES, { variables });
   const featuredArticlesResponse  = useQuery(FEATURED_ARTICLES, { variables: { language: lang } });
+  const isNotFound = use404({ response: articlesResponse, path: ['data', 'articleCollection', 'items'] });
 
   const isFeaturedArticleVisible = !page || page < 2;
-  const isUnknownLanguage = !AVAILABLE_LANGUAGES.includes(lang);
-  const isBlank = !articlesResponse.loading && isEmpty(get(articlesResponse, ['data', 'articleCollection', 'items']));
-
-  if (isBlank || isUnknownLanguage) {
-    return <Error statusCode={404} />
-  }
 
   return (
-    <Main title={formatMessage({ id: 'blog.blog' })}>
+    <Main
+      isNotFound={isNotFound}
+      title={formatMessage({ id: 'blog.blog' })}
+    >
       {isFeaturedArticleVisible && <FeaturedArticle {...featuredArticlesResponse} />}
       <LatestArticles {...articlesResponse} />
     </Main>

@@ -43,20 +43,22 @@ const ArticleDetails = ({ loading, data }) => {
             content={content}
           />
         </div>
-        <div className="flex flex-row-reverse lg:mt-8">
-          <Button
-            as="a"
-            href={document.url}
-            download={document.fileName}
-            className="w-full h-11 lg:w-72 lg:inline"
-          >
-            <FontAwesomeIcon
-              className="mr-2"
-              icon={faFileDownload}
-            />
-            <FormattedMessage id="blog.downloadDocument" />
-          </Button>
-        </div>
+        {document && (
+          <div className="flex flex-row-reverse lg:mt-8">
+            <Button
+              as="a"
+              href={document.url}
+              download={document.fileName}
+              className="w-full h-11 lg:w-72 lg:inline"
+            >
+              <FontAwesomeIcon
+                className="mr-2"
+                icon={faFileDownload}
+              />
+              <FormattedMessage id="blog.downloadDocument" />
+            </Button>
+          </div>
+        )}
       </div>
       <div className="container flex items-center mx-auto px-4 my-8">
         <div className="relative w-16 h-16 lg:w-32 lg:h-32">

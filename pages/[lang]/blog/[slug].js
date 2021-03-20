@@ -1,29 +1,27 @@
-import Error from 'next/error';
-import { get, isEmpty } from 'lodash';
+import { get } from 'lodash';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
 
-import { AVAILABLE_LANGUAGES } from 'constants/base';
 import Main from 'layouts/Main';
 import withApollo from 'lib/apolloClient';
 import ARTICLE_DETAILS from 'queries/articleDetails';
+import use404 from 'hooks/use404';
 import ArticleDetails from 'sections/ArticleDetails';
 
 const ArticlePage = () => {
-  const { query: { slug, lang } } = useRouter();
-  const articleDetailsResponse = useQuery(ARTICLE_DETAILS, { variables: { slug }});
-  const articleDetailsData = get(articleDetailsResponse, ['data', 'articleCollection', 'items', 0]);
-  const title = get(articleDetailsData, 'title');
-  const isBlank = !articleDetailsResponse.loading && isEmpty(articleDetailsData);
-  const isUnknownLanguage = !AVAILABLE_LANGUAGES.includes(lang);
+  const { query: { slug } } = useRouter();
+  const response = useQuery(ARTICLE_DETAILS, { variables: { slug }});
 
-  if (isBlank || isUnknownLanguage) {
-    return <Error statusCode={404} />
-  }
+  const path = ['data', 'articleCollection', 'items', 0];
+  const title = get(response, [...path, 'title']);
+  const isNotFound = use404({ response, path });
 
   return (
-    <Main title={title}>
-      <ArticleDetails {...articleDetailsResponse} />
+    <Main
+      title={title}
+      isNotFound={isNotFound}
+    >
+      <ArticleDetails {...response} />
     </Main>
   );
 };

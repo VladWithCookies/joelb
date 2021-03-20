@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import Error from 'next/error';
 
 import Header from 'sections/Header';
 import Footer from 'sections/Footer';
 
-const Main = ({ title, children }) => (
+const Main = ({ title, isNotFound, children }) => (
   <>
     <Head>
       <title>{title} | Joel Baker Ministry</title>
@@ -13,7 +14,7 @@ const Main = ({ title, children }) => (
     <div className="flex flex-col h-screen">
       <Header />
       <main className="flex flex-col flex-grow bg-gray-100 pt-4 md:pt-14">
-        {children}
+        {isNotFound ? <Error statusCode={404} /> : children}
       </main>
       <Footer />
     </div>
