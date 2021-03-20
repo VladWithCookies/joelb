@@ -1,6 +1,7 @@
 import { useIntl } from 'react-intl';
 
 import Main from 'layouts/Main';
+import withApollo from 'lib/apolloClient';
 import PrivacyPolicy from 'sections/PrivacyPolicy';
 
 const PrivacyPolicyPage = () => {
@@ -13,4 +14,4 @@ const PrivacyPolicyPage = () => {
   );
 };
 
-export default PrivacyPolicyPage;
+export default withApollo({ ssr: true })(PrivacyPolicyPage);

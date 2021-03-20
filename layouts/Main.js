@@ -13,7 +13,7 @@ const Main = ({ title, isNotFound, children }) => (
     </Head>
     <div className="flex flex-col h-screen">
       <Header />
-      <main className="flex flex-col flex-grow bg-gray-100 pt-4 md:pt-14">
+      <main className="flex flex-col flex-grow bg-gray-100 pt-14">
         {isNotFound ? <Error statusCode={404} /> : children}
       </main>
       <Footer />

@@ -5,6 +5,7 @@ import { FormattedMessage } from 'react-intl';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import CategorySelect from './CategorySelect';
 import LanguageSelect from './LanguageSelect';
 import NavigationLink from './NavigationLink';
 
@@ -55,6 +56,9 @@ const MobileNavigation = () => {
               <NavigationLink href="/blog">
                 <FormattedMessage id="blog.blog" />
               </NavigationLink>
+            </li>
+            <li>
+              <CategorySelect />
             </li>
             <li>
               <NavigationLink href="/videos">

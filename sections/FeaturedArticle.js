@@ -29,7 +29,7 @@ const FeaturedArticle = ({ data, loading }) => {
     <section className="mx-auto">
       <div className="container px-4">
         <Link href={`/blog/${slug}`}>
-          <article className="grid grid-cols-1 md:grid-cols-2 shadow-sm cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg mt-16">
+          <article className="grid grid-cols-1 md:grid-cols-2 shadow-sm cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg mt-8 md:mt-16">
             <div className="relative w-full h-72 md:h-96">
               <Image src={cover.url} />
             </div>

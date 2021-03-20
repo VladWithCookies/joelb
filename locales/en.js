@@ -5,6 +5,7 @@ export default {
     'app.madeWithLoveBy': 'Made with love by',
     'app.terms': 'Terms',
     'app.privacyPolicy': 'Privacy Policy',
+    'app.allCategories': 'All Categories',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',

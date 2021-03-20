@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import Legal from 'components/Legal';
 import Credits from 'components/Credits';
 import Copyright from 'components/Copyright';
-import Navigation from 'components/Navigation';
+import NavigationLink from 'components/NavigationLink';
 
 const Footer = () => (
   <footer className="bg-black text-white">
@@ -13,7 +13,32 @@ const Footer = () => (
       </div>
       <hr />
       <div className="flex py-8 leading-loose">
-        <Navigation className="w-1/2 lg:w-1/4" />
+        <ul className="w-1/2 lg:w-1/4">
+          <li>
+            <NavigationLink
+              href="/blog"
+              className="mr-10"
+            >
+              <FormattedMessage id="blog.blog" />
+            </NavigationLink>
+          </li>
+          <li>
+            <NavigationLink
+              href="/videos"
+              className="mr-10"
+            >
+              <FormattedMessage id="videos.videos" />
+            </NavigationLink>
+          </li>
+          <li>
+            <NavigationLink
+              href="/about"
+              className="mr-10"
+            >
+              <FormattedMessage id="about.about" />
+            </NavigationLink>
+          </li>
+        </ul>
         <Legal className="w-1/2 lg:w-1/4" />
       </div>
       <div className="flex flex-col items-center">

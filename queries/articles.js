@@ -1,8 +1,18 @@
 import graphql from 'graphql-tag';
 
 export default graphql`
-  query articles($limit: Int!, $offset: Int!, $language: String!) {
-    articleCollection(limit: $limit, skip: $offset, where: { featured: false, language: $language }) {
+  query articles($limit: Int!, $offset: Int!, $language: String!, $category: String) {
+    articleCollection(
+      limit: $limit,
+      skip: $offset,
+      where: {
+        featured: false,
+        language: $language,
+        category: {
+          name: $category
+        }
+      }
+    ) {
       offset: skip
       total
       items {

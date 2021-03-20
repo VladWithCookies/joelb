@@ -1,5 +1,6 @@
 import { useIntl } from 'react-intl';
 
+import withApollo from 'lib/apolloClient';
 import Main from 'layouts/Main';
 import Terms from 'sections/Terms';
 
@@ -13,4 +14,4 @@ const TermsPage = () => {
   );
 };
 
-export default TermsPage;
+export default  withApollo({ ssr: true })(TermsPage);

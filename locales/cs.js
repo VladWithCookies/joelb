@@ -5,6 +5,7 @@ export default {
     'app.madeWithLoveBy': 'Vyrobeno s láskou podle',
     'app.terms': 'Podmínky použití',
     'app.privacyPolicy': 'Ochrana údajů',
+    'app.allCategories': 'All Categories CS',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Předchozí',

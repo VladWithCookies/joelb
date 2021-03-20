@@ -5,6 +5,7 @@ export default {
     'app.madeWithLoveBy': 'Napravljeno s ljubavlju od',
     'app.terms': 'Uslovi korišćenja',
     'app.privacyPolicy': 'Pravila o privatnosti',
+    'app.allCategories': 'All Categories SR',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prethodne',

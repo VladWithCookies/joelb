@@ -1,16 +1,15 @@
 import { map, isEmpty } from 'lodash';
-
 import { PAGINATION_LIMIT } from 'constants/base';
 import Article from 'components/Article';
 import Pagination from 'components/Pagination';
 
-const LatestArticles = ({ data, loading, fetchMore }) => {
+const LatestArticles = ({ data, loading, fetchMore, className }) => {
   if (loading || isEmpty(data.articleCollection.items)) return null;
 
   const { articleCollection: { items, offset, total } } = data;
 
   return (
-    <section className="mx-auto mt-8 mb-16 md:my-16">
+    <section className="mx-auto mb-16 mt-8 md:my-16">
       <div className="container px-4">
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {map(items, item => (

@@ -13,9 +13,10 @@ import LatestArticles from 'sections/LatestArticles';
 
 const IndexPage = () => {
   const { formatMessage } = useIntl();
-  const { query: { page, lang } } = useRouter();
+  const { query: { page, lang, category } } = useRouter();
 
   const variables = {
+    category,
     language: lang,
     limit: PAGINATION_LIMIT,
     offset: page ? PAGINATION_LIMIT * (page - 1) : 0,

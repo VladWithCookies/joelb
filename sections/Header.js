@@ -1,6 +1,5 @@
 import Logo from 'components/Logo';
 import Navigation from 'components/Navigation';
-import LanguageSelect from 'components/LanguageSelect';
 import MobileNavigation from 'components/MobileNavigation';
 
 const Header = () => (
@@ -10,7 +9,6 @@ const Header = () => (
       <div className="flex">
         <Navigation className="hidden md:flex" />
         <MobileNavigation />
-        <LanguageSelect className="hidden md:block" />
       </div>
     </div>
   </header>
