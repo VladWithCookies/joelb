@@ -1,11 +1,15 @@
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { EN_LANGUAGE, CS_LANGUAGE, SR_LANGUAGE } from 'constants/base';
 
 const LanguageSelect = ({ className }) => {
   const { push, pathname, query } = useRouter();
   const [language, setLanguage] = useState(query.lang);
+
+  useEffect(() => {
+    setLanguage(query.lang);
+  }, [query]);
 
   const handleChange = ({ target: { value } }) => {
     push({ pathname, query: { ...query, lang: value } });
