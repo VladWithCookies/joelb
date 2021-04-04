@@ -1,4 +1,4 @@
-import { useIntl } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
 
@@ -27,6 +27,9 @@ const VideosPage = () => {
       isNotFound={isNotFound}
       title={formatMessage({ id: 'videos.videos' })}
     >
+      <h1 hidden>
+        <FormattedMessage id="videos.videos" />
+      </h1>
       <Videos {...response} />
     </Main>
   );

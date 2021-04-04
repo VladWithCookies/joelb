@@ -35,7 +35,10 @@ const ArticleDetails = ({ loading, data }) => {
           <Meta className="text-gray-900">
             {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
           </Meta>
-          <Title className="text-2xl lg:text-4xl mt-4">
+          <Title
+            as="h1"
+            className="text-2xl lg:text-4xl mt-4"
+          >
             {title}
           </Title>
           <Content

@@ -1,4 +1,5 @@
 import { useIntl } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import Main from 'layouts/Main';
 import withApollo from 'lib/apolloClient';
@@ -10,6 +11,9 @@ const AboutPage = () => {
 
   return (
     <Main title={formatMessage({ id: 'about.about' })}>
+      <h1 hidden>
+        <FormattedMessage id="about.about" />
+      </h1>
       <History />
       <Statement />
     </Main>

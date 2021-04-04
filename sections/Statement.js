@@ -5,7 +5,10 @@ const Statement = () => (
   <section className="px-auto">
     <div className="container flex justify-center mx-auto">
       <div className="max-w-4xl px-4 py-16">
-        <Title className="text-2xl md:text-4xl lg:text-4xl text-center underline">
+        <Title
+          as="h2"
+          className="text-2xl md:text-4xl lg:text-4xl text-center underline"
+        >
           Statement of Faith
         </Title>
         <p className="text-xl mt-8">

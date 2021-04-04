@@ -38,7 +38,10 @@ const FeaturedArticle = ({ data, loading }) => {
                 <Meta>
                   {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
                 </Meta>
-                <Title className="lg:text-4xl mt-4">
+                <Title
+                  as="h1"
+                  className="lg:text-4xl mt-4"
+                >
                   {title}
                 </Title>
                 <Description className="mt-4">

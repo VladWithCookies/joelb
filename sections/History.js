@@ -3,6 +3,9 @@ import ExternalLink from 'components/ExternalLink';
 
 const History = () => (
   <section className="px-auto">
+    <h2 hidden>
+      History
+    </h2>
     <Jumbotron
       image="/bakers.jpg"
       alt="Joel and Nicole Baker"
