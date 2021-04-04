@@ -16,10 +16,19 @@ const ArticlePage = () => {
   const title = get(response, [...path, 'title']);
   const isNotFound = use404({ response, path });
 
+  const translations = [
+    { href: `/sr/blog/${slug}`, hreflang: 'sr-rs' },
+    { href: `/sr/blog/${slug}`, hreflang: 'sr-me' },
+    { href: `/en/blog/${slug}`, hreflang: 'en-us' },
+    { href: `/en/blog/${slug}`, hreflang: 'en-gb' },
+    { href: `/cs/blog/${slug}`, hreflang: 'cs-cz' },
+  ];
+
   return (
     <Main
       title={title}
       isNotFound={isNotFound}
+      translations={translations}
     >
       <ArticleDetails {...response} />
     </Main>

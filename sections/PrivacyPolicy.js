@@ -1,3 +1,4 @@
+import { CLIENT_URL } from 'constants/base';
 import ExternalLink from 'components/ExternalLink';
 
 const PrivacyPolicy = () => (
@@ -83,7 +84,7 @@ const PrivacyPolicy = () => (
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to Joel Baker Ministry, accessible from <ExternalLink href="https://joel-baker-ministry.vercel.app">joel-baker-ministry.vercel.app</ExternalLink>
+            <strong>Website</strong> refers to Joel Baker Ministry, accessible from <ExternalLink href={CLIENT_URL}>{CLIENT_URL}</ExternalLink>
           </p>
         </li>
         <li>

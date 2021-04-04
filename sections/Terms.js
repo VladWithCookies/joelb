@@ -1,3 +1,4 @@
+import { CLIENT_URL } from 'constants/base';
 import ExternalLink from 'components/ExternalLink';
 
 const Terms = () => (
@@ -65,7 +66,7 @@ const Terms = () => (
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to Joel Baker Ministry, accessible from https://joel-baker-ministry.vercel.app
+            <strong>Website</strong> refers to Joel Baker Ministry, accessible from {CLIENT_URL}
           </p>
         </li>
         <li>

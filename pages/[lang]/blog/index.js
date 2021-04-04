@@ -28,9 +28,18 @@ const IndexPage = () => {
 
   const isFeaturedArticleVisible = (!page || page < 2) && !category;
 
+  const translations = [
+    { href: '/sr/blog', hreflang: 'sr-rs' },
+    { href: '/sr/blog', hreflang: 'sr-me' },
+    { href: '/en/blog', hreflang: 'en-us' },
+    { href: '/en/blog', hreflang: 'en-gb' },
+    { href: '/cs/blog', hreflang: 'cs-cz' },
+  ];
+
   return (
     <Main
       isNotFound={isNotFound}
+      translations={translations}
       title={formatMessage({ id: 'blog.blog' })}
     >
       {isFeaturedArticleVisible && <FeaturedArticle {...featuredArticlesResponse} />}
