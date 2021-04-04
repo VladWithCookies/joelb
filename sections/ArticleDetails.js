@@ -28,7 +28,7 @@ const ArticleDetails = ({ loading, data }) => {
   return (
     <section>
       <div className="relative w-full h-96">
-        <Image src={cover.url} />
+        <Image src={cover.url} alt="" />
       </div>
       <div className="grid lg:grid-cols-3 grid-col-1 container mx-auto px-4">
         <div className="lg:col-span-2 my-8">
@@ -65,6 +65,7 @@ const ArticleDetails = ({ loading, data }) => {
           <Image
             src={author.avatar.url}
             className="rounded-full"
+            alt=""
           />
         </div>
         <div className="ml-8">

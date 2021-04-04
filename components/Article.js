@@ -21,7 +21,7 @@ const Article = ({
   <Link href={`/blog/${slug}`}>
     <article className="bg-white cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg">
       <div className="relative w-full h-72">
-        <Image src={cover.url} />
+        <Image src={cover.url} alt="" />
       </div>
       <div className="flex flex-col justify-between p-4 h-72">
         <div>

@@ -1,12 +1,10 @@
 import NextImage from 'next/image'
 
-const Image = ({ className, ...props }) => (
+const Image = props => (
   <NextImage
     {...props}
     layout="fill"
     objectFit="cover"
-    className={className}
-    alt=""
   />
 );
 

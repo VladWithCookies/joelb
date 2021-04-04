@@ -3,7 +3,10 @@ import ExternalLink from 'components/ExternalLink';
 
 const History = () => (
   <section className="px-auto">
-    <Jumbotron image="/bakers.jpg">
+    <Jumbotron
+      image="/bakers.jpg"
+      alt="Joel and Nicole Baker"
+    >
       Nicola and Joel owe a great debt of thankfulness to Eastern Europeans where they lived and ministered for
       over thirty years. Nicola’s family owes a debt to the Czechs. Her family lived in a house in Wimbledon,
       southwest London, England during World War 2. Nightly, the German air force bombed London and the residents
@@ -16,6 +19,7 @@ const History = () => (
       reversed
       image="/kamenari.jpg"
       className="bg-white"
+      alt="View of Bay of Kotor fron Kamenari village"
     >
       Joel had just received Christ as personal Savior just before starting college to study medicine near Chicago.
       At college, Joel met a fellow medical student, Lidija Jovanovic, from a Yugoslav family (with a Montenegrine name).
@@ -27,7 +31,10 @@ const History = () => (
       ). In the former Yugoslavia, there is a lot of religious Christianity but unfortunately very little experience with
       the Holy Spirit! Joel feels a debt of thankfulness to help bless the people of the former Yugoslavia.
     </Jumbotron>
-    <Jumbotron image="/joel.jpg">
+    <Jumbotron
+      image="/joel.jpg"
+      alt="Joel preaching"
+    >
       Joel felt the “strength” of salvation (
       <ExternalLink href="https://www.kingjamesbibleonline.org/Romans-Chapter-5/#6">
         Rom. 5:6
@@ -52,6 +59,7 @@ const History = () => (
       reversed
       image="/bible.jpg"
       className="bg-white"
+      alt="Bible"
     >
       For this purpose, we want to bless you with many life-transforming revelations from the Word of God. We share
       with you freely 40 years of Bible Study notes, illustrations, articles and videos! Be blessed from our pastoral

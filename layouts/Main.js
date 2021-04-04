@@ -10,6 +10,7 @@ const Main = ({ title, isNotFound, children }) => (
       <title>{title} | Joel Baker Ministry</title>
       <meta name="author" content="Vlad V" />
       <meta name="description" content="Joel Baker Ministry" />
+      <link rel="canonical" href="joel-baker-ministry.vercel.app"/>
     </Head>
     <div className="flex flex-col h-screen">
       <Header />

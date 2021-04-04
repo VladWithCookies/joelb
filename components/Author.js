@@ -14,6 +14,7 @@ const Author = ({
       <Image
         src={avatar.url}
         className="rounded-full"
+        alt=""
       />
     </div>
     <p className="font-medium ml-4">
