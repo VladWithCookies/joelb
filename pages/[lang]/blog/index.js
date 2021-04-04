@@ -26,7 +26,7 @@ const IndexPage = () => {
   const featuredArticlesResponse  = useQuery(FEATURED_ARTICLES, { variables: { language: lang } });
   const isNotFound = use404({ response: articlesResponse, path: ['data', 'articleCollection', 'items'] });
 
-  const isFeaturedArticleVisible = !page || page < 2;
+  const isFeaturedArticleVisible = (!page || page < 2) && !category;
 
   return (
     <Main

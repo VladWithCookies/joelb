@@ -16,7 +16,7 @@ const CategorySelect = ({ className }) => {
   const categories = get(response, ['data', 'categoryCollection', 'items']);
 
   const handleChange = ({ target: { value } }) => {
-    const params = isEmpty(value) ? omit(query, 'category') : { ...query, category: value };
+    const params = isEmpty(value) ? omit(query, 'category') : { ...query, category: value, page: 1 };
 
     push({ pathname: '/[lang]/blog', query: params });
     setCategory(value);
@@ -25,8 +25,8 @@ const CategorySelect = ({ className }) => {
   return (
     <select
       value={category}
-      aria-label="Category"
       onChange={handleChange}
+      aria-label={formatMessage({ id: 'app.category' })}
       className={clsx('cursor-pointer bg-transparent', className)}
     >
       <option value="">

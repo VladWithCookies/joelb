@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
@@ -11,6 +12,7 @@ import NavigationLink from './NavigationLink';
 
 const MobileNavigation = () => {
   const router = useRouter();
+  const { formatMessage } = useIntl();
   const [isOpened, setIsOpened] = useState(false);
 
   useEffect(() => {
@@ -35,9 +37,9 @@ const MobileNavigation = () => {
     <>
       <button
         type="button"
-        aria-label="Open menu"
         onClick={onToggleMenu}
         className="flex md:hidden"
+        aria-label={formatMessage({ id: 'app.openMenu' })}
       >
         <FontAwesomeIcon
           size="lg"
@@ -76,9 +78,9 @@ const MobileNavigation = () => {
           </ul>
           <button
             type="button"
-            aria-label="Close menu"
             onClick={onToggleMenu}
             className="flex md:hidden"
+            aria-label={formatMessage({ id: 'app.closeMenu' })}
           >
             <FontAwesomeIcon
               size="3x"

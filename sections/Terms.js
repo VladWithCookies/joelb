@@ -1,3 +1,5 @@
+import ExternalLink from 'components/ExternalLink';
+
 const Terms = () => (
   <section className="mx-auto my-8">
     <div className="container px-4 py-8">
@@ -53,7 +55,7 @@ const Terms = () => (
         </li>
         <li>
           <p>
-            <strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.privacypolicies.com/terms-conditions-generator/" target="_blank" className="text-indigo-900">Terms and Conditions Generator</a>.
+            <strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <ExternalLink href="https://www.privacypolicies.com/terms-conditions-generator/">Terms and Conditions Generator</ExternalLink>.
           </p>
         </li>
         <li>
@@ -63,7 +65,7 @@ const Terms = () => (
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to Joel Baker Ministry, accessible from <a href="https://joel-baker-ministry.vercel.app" rel="external nofollow noopener" target="_blank" className="text-indigo-900">https://joel-baker-ministry.vercel.app</a>
+            <strong>Website</strong> refers to Joel Baker Ministry, accessible from https://joel-baker-ministry.vercel.app
           </p>
         </li>
         <li>

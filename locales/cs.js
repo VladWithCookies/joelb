@@ -5,7 +5,11 @@ export default {
     'app.madeWithLoveBy': 'Vyrobeno s láskou podle',
     'app.terms': 'Podmínky použití',
     'app.privacyPolicy': 'Ochrana údajů',
-    'app.allCategories': 'All Categories CS',
+    'app.allCategories': 'Všechny kategorie',
+    'app.category': 'Kategorie',
+    'app.language': 'Jazyk',
+    'app.openMenu': 'Otevřete nabídku',
+    'app.closeMenu': 'Zavřít nabídku',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Předchozí',

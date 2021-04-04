@@ -1,9 +1,11 @@
 import clsx from 'clsx';
-import { useState, useEffect } from 'react';
+import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 import { EN_LANGUAGE, CS_LANGUAGE, SR_LANGUAGE } from 'constants/base';
 
 const LanguageSelect = ({ className }) => {
+  const { formatMessage } = useIntl();
   const { push, pathname, query } = useRouter();
   const [language, setLanguage] = useState(query.lang);
 
@@ -19,8 +21,8 @@ const LanguageSelect = ({ className }) => {
   return (
     <select
       value={language}
-      aria-label="Language"
       onChange={handleChange}
+      aria-label={formatMessage({ id: 'app.language' })}
       className={clsx('cursor-pointer bg-transparent', className)}
     >
       <option value={EN_LANGUAGE}>

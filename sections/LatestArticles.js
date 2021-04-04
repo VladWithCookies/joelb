@@ -3,7 +3,7 @@ import { PAGINATION_LIMIT } from 'constants/base';
 import Article from 'components/Article';
 import Pagination from 'components/Pagination';
 
-const LatestArticles = ({ data, loading, fetchMore, className }) => {
+const LatestArticles = ({ data, loading, fetchMore }) => {
   if (loading || isEmpty(data.articleCollection.items)) return null;
 
   const { articleCollection: { items, offset, total } } = data;

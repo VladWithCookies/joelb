@@ -1,3 +1,5 @@
+import ExternalLink from 'components/ExternalLink';
+
 const PrivacyPolicy = () => (
   <section className="mx-auto my-8">
     <div className="container px-4 py-8">
@@ -11,7 +13,7 @@ const PrivacyPolicy = () => (
         This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
       </p>
       <p className="mt-2">
-        We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank" className="text-indigo-900">Privacy Policy Generator</a>.
+        We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <ExternalLink href="https://www.privacypolicies.com/privacy-policy-generator/">Privacy Policy Generator</ExternalLink>.
       </p>
       <h1 className="text-4xl mt-4">
         Interpretation and Definitions
@@ -81,7 +83,7 @@ const PrivacyPolicy = () => (
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to Joel Baker Ministry, accessible from <a href="https://joel-baker-ministry.vercel.app" rel="external nofollow noopener" target="_blank" className="text-indigo-900">joel-baker-ministry.vercel.app</a>
+            <strong>Website</strong> refers to Joel Baker Ministry, accessible from <ExternalLink href="https://joel-baker-ministry.vercel.app">joel-baker-ministry.vercel.app</ExternalLink>
           </p>
         </li>
         <li>
@@ -128,14 +130,14 @@ const PrivacyPolicy = () => (
           <strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.
         </li>
         <li>
-          <strong>Flash Cookies.</strong> Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read &quot;Where can I change the settings for disabling, or deleting local shared objects?&quot; available at <a href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_" rel="external nofollow noopener" target="_blank" className="text-indigo-900">link</a>.
+          <strong>Flash Cookies.</strong> Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read &quot;Where can I change the settings for disabling, or deleting local shared objects?&quot; available at <ExternalLink href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_">link</ExternalLink>.
         </li>
         <li>
           <strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).
         </li>
       </ul>
       <p className="mt-2">
-        Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies: <a href="https://www.privacypolicies.com/blog/cookies/" target="_blank" className="text-indigo-900">What Are Cookies?</a>.
+        Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies: <ExternalLink href="https://www.privacypolicies.com/blog/cookies/">What Are Cookies?</ExternalLink>.
       </p>
       <p className="mt-2">
         We use both Session and Persistent Cookies for the purposes set out below:
@@ -363,7 +365,7 @@ const PrivacyPolicy = () => (
         Contact Us
       </h1>
       <p className="mt-2">
-        If you have any questions about this Privacy Policy, You can contact us by email: <a href="mailto:bakersjn@hotmail.com" className="text-indigo-900">bakersjn@hotmail.com</a>
+        If you have any questions about this Privacy Policy, You can contact us by email: <ExternalLink href="mailto:bakersjn@hotmail.com">bakersjn@hotmail.com</ExternalLink>
       </p>
     </div>
   </section>

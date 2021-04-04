@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.11",
+    "@apollo/client": "^3.3.13",
     "@contentful/rich-text-html-renderer": "^14.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",

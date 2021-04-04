@@ -6,6 +6,10 @@ export default {
     'app.terms': 'Terms',
     'app.privacyPolicy': 'Privacy Policy',
     'app.allCategories': 'All Categories',
+    'app.category': 'Category',
+    'app.language': 'Language',
+    'app.openMenu': 'Open menu',
+    'app.closeMenu': 'Close menu',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',
