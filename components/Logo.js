@@ -4,7 +4,7 @@ import Link from './Link';
 
 const Logo = () => (
   <Link href="/blog">
-    <a>
+    <a className="text-lg">
       <FormattedMessage id="app.joelBakerMinistry" />
     </a>
   </Link>

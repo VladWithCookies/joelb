@@ -2,6 +2,7 @@ import { includes } from 'lodash';
 import { IntlProvider } from 'react-intl';
 import 'tailwindcss/tailwind.css';
 import 'unreset-css/dist/unreset.css';
+import 'stylesheets/select.css';
 
 import locales from 'locales';
 import { AVAILABLE_LANGUAGES } from 'constants/base';

@@ -1,8 +1,9 @@
-import clsx from 'clsx';
 import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+
 import { EN_LANGUAGE, CS_LANGUAGE, SR_LANGUAGE } from 'constants/base';
+import Select from './Select';
 
 const LanguageSelect = ({ className }) => {
   const { formatMessage } = useIntl();
@@ -19,22 +20,17 @@ const LanguageSelect = ({ className }) => {
   }
 
   return (
-    <select
+    <Select
       value={language}
+      className={className}
       onChange={handleChange}
-      aria-label={formatMessage({ id: 'app.language' })}
-      className={clsx('cursor-pointer bg-transparent', className)}
-    >
-      <option value={EN_LANGUAGE}>
-        English
-      </option>
-      <option value={SR_LANGUAGE}>
-        Srpski
-      </option>
-      <option value={CS_LANGUAGE}>
-        Čeština
-      </option>
-    </select>
+      ariaLabel={formatMessage({ id: 'app.language' })}
+      options={[
+        { value: EN_LANGUAGE, label: 'English' },
+        { value: SR_LANGUAGE, label: 'Srpski' },
+        { value: CS_LANGUAGE, label: 'Čeština' },
+      ]}
+    />
   );
 };
 

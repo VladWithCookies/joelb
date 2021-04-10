@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { useState } from 'react';
 import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
@@ -6,6 +5,7 @@ import { useQuery } from '@apollo/client';
 import { map, get, omit, isEmpty } from 'lodash';
 
 import CATEGORIES from 'queries/categories';
+import Select from './Select';
 
 const CategorySelect = ({ className }) => {
   const { push, query } = useRouter();
@@ -15,6 +15,14 @@ const CategorySelect = ({ className }) => {
 
   const categories = get(response, ['data', 'categoryCollection', 'items']);
 
+  const options = [
+    {
+      value: '',
+      label: formatMessage({ id: 'app.allCategories' }),
+    },
+    ...map(categories, ({ name }) => ({ value: name, label: name })),
+  ];
+
   const handleChange = ({ target: { value } }) => {
     const params = isEmpty(value) ? omit(query, 'category') : { ...query, category: value, page: 1 };
 
@@ -23,24 +31,13 @@ const CategorySelect = ({ className }) => {
   }
 
   return (
-    <select
+    <Select
       value={category}
+      options={options}
+      className={className}
       onChange={handleChange}
-      aria-label={formatMessage({ id: 'app.category' })}
-      className={clsx('cursor-pointer bg-transparent', className)}
-    >
-      <option value="">
-        {formatMessage({ id: 'app.allCategories' })}
-      </option>
-      {map(categories, ({ name }) => (
-        <option
-          key={name}
-          value={name}
-        >
-          {name}
-        </option>
-      ))}
-    </select>
+      ariaLabel={formatMessage({ id: 'app.category' })}
+    />
   );
 };
 
