@@ -11,7 +11,7 @@ const Main = ({ title, translations, isNotFound, children }) => (
     <Head>
       <title>{title} | Joel Baker Ministry</title>
       <meta name="author" content="Vlad V" />
-      <meta name="description" content="Joel Baker Ministry" />
+      <meta name="description" content="We share with you freely 40 years of Bible study notes, articles and videos!" />
       <link rel="canonical" href="joel-baker-ministry.vercel.app"/>
       {map(translations, ({ hreflang, href }) => (
         <link key={hreflang} rel="alternate" href={`${CLIENT_URL}${href}`} hreflang={hreflang} />
