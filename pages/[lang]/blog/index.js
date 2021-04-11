@@ -1,8 +1,9 @@
+import { get } from 'lodash';
 import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
 
-import { PAGINATION_LIMIT } from 'constants/base';
+import { CLIENT_URL, PAGINATION_LIMIT } from 'constants/base';
 import ARTICLES from 'queries/articles';
 import FEATURED_ARTICLES from 'queries/featuredArticles';
 import withApollo from 'lib/apolloClient';
@@ -13,7 +14,7 @@ import LatestArticles from 'sections/LatestArticles';
 
 const IndexPage = () => {
   const { formatMessage } = useIntl();
-  const { query: { page, lang, category } } = useRouter();
+  const { asPath, query: { page, lang, category } } = useRouter();
 
   const variables = {
     category,
@@ -24,7 +25,8 @@ const IndexPage = () => {
 
   const articlesResponse = useQuery(ARTICLES, { variables });
   const featuredArticlesResponse  = useQuery(FEATURED_ARTICLES, { variables: { language: lang } });
-  const isNotFound = use404({ response: articlesResponse, path: ['data', 'articleCollection', 'items'] });
+  const path = ['data', 'articleCollection', 'items'];
+  const isNotFound = use404({ response: articlesResponse, path });
 
   const isFeaturedArticleVisible = (!page || page < 2) && !category;
 
@@ -36,8 +38,32 @@ const IndexPage = () => {
     { href: '/cs/blog', hreflang: 'cs-cz' },
   ];
 
+  const socials = [
+    {
+      property: 'og:title',
+      content: 'Joel Baker Ministry Blog',
+    },
+    {
+      property: 'og:description',
+      content: 'We share with you freely 40 years of Bible study notes, articles and videos!',
+    },
+    {
+      property: 'og:image',
+      content: get(featuredArticlesResponse, [...path, 0, 'cover', 'url']),
+    },
+    {
+      property: 'og:url',
+      content: `${CLIENT_URL}${asPath}`,
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+  ];
+
   return (
     <Main
+      socials={socials}
       isNotFound={isNotFound}
       translations={translations}
       title={formatMessage({ id: 'blog.blog' })}

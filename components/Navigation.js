@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { FormattedMessage } from 'react-intl';
 
 import LanguageSelect from './LanguageSelect';
@@ -6,7 +5,7 @@ import CategorySelect from './CategorySelect';
 import NavigationLink from './NavigationLink';
 
 const Navigation = ({ className }) => (
-  <ul className={clsx('text-lg', className)}>
+  <ul className={className}>
     <li className="mr-10">
       <NavigationLink href="/blog">
         <FormattedMessage id="blog.blog" />

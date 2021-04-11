@@ -30,7 +30,7 @@ export default graphql`
           name
         }
         cover {
-          url(transform:{ height: 288, width: 395 })
+          url(transform:{ height: 400, width: 600 })
         }
       }
     }

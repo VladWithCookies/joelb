@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import NavigationLink from './NavigationLink';
 
 const Legal = () => (
-  <ul className="text-lg">
+  <ul>
     <li>
       <NavigationLink href="/terms">
         <FormattedMessage id="app.terms" />

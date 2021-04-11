@@ -9,8 +9,8 @@ const LatestArticles = ({ data, loading, fetchMore }) => {
   const { articleCollection: { items, offset, total } } = data;
 
   return (
-    <section className="mx-auto mb-16 mt-8 md:my-16">
-      <div className="container px-4">
+    <section className="min-w-full mb-16 mt-8 md:my-16">
+      <div className="container mx-auto px-4">
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {map(items, item => (
             <li key={item.slug}>

@@ -8,12 +8,12 @@ import NavigationLink from 'components/NavigationLink';
 const Footer = () => (
   <footer className="bg-black text-white">
     <div className="container mx-auto px-4">
-      <div className="text-lg py-8">
+      <div className="py-8">
         <FormattedMessage id="app.joelBakerMinistry" />
       </div>
       <hr />
       <div className="flex py-8 leading-loose">
-        <ul className="text-lg w-1/2 lg:w-1/4">
+        <ul className="w-1/2 lg:w-1/4">
           <li>
             <NavigationLink
               href="/blog"

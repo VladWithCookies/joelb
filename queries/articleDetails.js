@@ -6,6 +6,7 @@ export default graphql`
       items {
         date
         title
+        description
         content {
           json
         }
@@ -24,7 +25,7 @@ export default graphql`
           name
         }
         cover {
-          url(transform:{ height: 900, width: 1440 })
+          url(transform:{ height: 1200, width: 1600 })
         }
       }
     }
