@@ -13,7 +13,7 @@ import NavigationLink from './NavigationLink';
 const MobileNavigation = () => {
   const router = useRouter();
   const { formatMessage } = useIntl();
-  const [isOpened, setIsOpened] = useState(false);
+  const [isOpened, setIsOpened] = useState();
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -48,10 +48,9 @@ const MobileNavigation = () => {
       </button>
       <div className="absolute md:hidden">
         <div className={clsx(
-          'm-0 py-20 fixed top-0 left-0 w-full h-full bg-white',
-          'flex flex-col items-center',
-          'transform transition-transform duration-300',
-          isOpened ? 'translate-x-0' : 'translate-x-full'
+          'm-0 py-20 fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center transform',
+          isOpened ? 'translate-x-0' : 'translate-x-full',
+          { 'transition-transform duration-300': isOpened !== undefined },
         )}>
           <ul className="flex flex-col flex-grow items-center justify-evenly text-2xl py-10">
             <li>
