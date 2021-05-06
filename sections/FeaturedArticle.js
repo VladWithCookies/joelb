@@ -1,4 +1,5 @@
 import { isEmpty } from 'lodash';
+import { useRouter } from 'next/router';
 import { FormattedDate } from 'react-intl';
 
 import Link from 'components/Link';
@@ -10,6 +11,8 @@ import Description from 'components/Description';
 
 const FeaturedArticle = ({ data, loading }) => {
   if (loading || isEmpty(data.articleCollection.items)) return null;
+
+  const { query: { lang } } = useRouter();
 
   const {
     articleCollection: {
@@ -36,7 +39,7 @@ const FeaturedArticle = ({ data, loading }) => {
             <div className="flex flex-col justify-between bg-white h-72 p-4 md:h-96 md:p-8">
               <div>
                 <Meta>
-                  {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
+                  {category[lang]} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
                 </Meta>
                 <Title
                   as="h1"

@@ -22,7 +22,9 @@ export default graphql`
           fileName
         }
         category {
-          name
+          en
+          sr
+          cs
         }
         cover {
           url(transform:{ height: 1200, width: 1600 })

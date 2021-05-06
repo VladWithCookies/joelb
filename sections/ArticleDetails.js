@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { FormattedMessage, FormattedDate } from 'react-intl';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +11,8 @@ import Button from 'components/Button';
 
 const ArticleDetails = ({ loading, data }) => {
   if (loading) return null;
+
+  const { query: { lang } } = useRouter();
 
   const {
     articleCollection: {
@@ -33,7 +36,7 @@ const ArticleDetails = ({ loading, data }) => {
       <div className="grid lg:grid-cols-3 grid-col-1 container mx-auto px-4">
         <div className="lg:col-span-2 my-8">
           <Meta className="text-gray-900">
-            {category.name} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
+            {category[lang]} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
           </Meta>
           <Title
             as="h1"

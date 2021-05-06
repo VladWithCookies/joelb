@@ -9,7 +9,7 @@ export default graphql`
         featured: false,
         language: $language,
         category: {
-          name: $category
+          en: $category
         }
       }
     ) {
@@ -27,7 +27,9 @@ export default graphql`
           }
         }
         category {
-          name
+          en
+          sr
+          cs
         }
         cover {
           url(transform:{ height: 400, width: 600 })

@@ -20,7 +20,10 @@ const CategorySelect = ({ className }) => {
       value: '',
       label: formatMessage({ id: 'app.allCategories' }),
     },
-    ...map(categories, ({ name }) => ({ value: name, label: name })),
+    ...map(categories, category => ({
+      value: category.en,
+      label: category[query.lang],
+    })),
   ];
 
   const handleChange = ({ target: { value } }) => {

@@ -4,7 +4,9 @@ export default graphql`
   query categories {
     categoryCollection {
       items {
-        name
+        en
+        sr
+        cs
       }
     }
   }
