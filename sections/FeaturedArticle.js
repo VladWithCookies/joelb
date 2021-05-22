@@ -34,7 +34,11 @@ const FeaturedArticle = ({ data, loading }) => {
         <Link href={`/blog/${slug}`}>
           <article className="grid grid-cols-1 md:grid-cols-2 shadow-sm cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg mt-8 md:mt-16">
             <div className="relative w-full h-72 md:h-96">
-              <Image src={cover.url} alt="" />
+              <Image
+                src={cover.url}
+                priority
+                alt=""
+              />
             </div>
             <div className="flex flex-col justify-between bg-white h-72 p-4 md:h-96 md:p-8">
               <div>
