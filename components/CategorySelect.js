@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 import { useRouter } from 'next/router';
 import { useQuery } from '@apollo/client';
@@ -12,6 +12,10 @@ const CategorySelect = ({ className }) => {
   const { formatMessage } = useIntl();
   const response = useQuery(CATEGORIES);
   const [category, setCategory] = useState(query.category);
+
+  useEffect(() => {
+    setCategory(query.category);
+  }, [query.category]);
 
   const categories = get(response, ['data', 'categoryCollection', 'items']);
 
