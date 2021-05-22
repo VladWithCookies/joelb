@@ -15,7 +15,7 @@ const LanguageSelect = ({ className }) => {
   }, [query]);
 
   const handleChange = ({ target: { value } }) => {
-    push({ pathname, query: { ...query, lang: value } });
+    push({ pathname, query: { lang: value } });
     setLanguage(value);
   }
 
