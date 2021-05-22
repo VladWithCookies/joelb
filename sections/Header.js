@@ -7,7 +7,7 @@ const Header = () => (
     <div className="container flex justify-between mx-auto p-4">
       <Logo />
       <div className="flex">
-        <Navigation className="hidden md:flex" />
+        <Navigation className="hidden lg:flex" />
         <MobileNavigation />
       </div>
     </div>

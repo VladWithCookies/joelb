@@ -10,6 +10,7 @@ export default {
     'app.language': 'Jezik',
     'app.openMenu': 'Otvori meni',
     'app.closeMenu': 'Zatvori meni',
+    'app.studyNotes': 'Studije napomene',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prethodne',

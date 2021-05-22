@@ -6,9 +6,11 @@ import { FormattedMessage } from 'react-intl';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { DROPBOX_STUDY_NOTES_LINK } from 'constants/base';
 import CategorySelect from './CategorySelect';
 import LanguageSelect from './LanguageSelect';
 import NavigationLink from './NavigationLink';
+import ExternalLink from './ExternalLink';
 
 const MobileNavigation = () => {
   const router = useRouter();
@@ -38,7 +40,7 @@ const MobileNavigation = () => {
       <button
         type="button"
         onClick={onToggleMenu}
-        className="flex md:hidden"
+        className="flex lg:hidden"
         aria-label={formatMessage({ id: 'app.openMenu' })}
       >
         <FontAwesomeIcon
@@ -46,7 +48,7 @@ const MobileNavigation = () => {
           icon={faBars}
         />
       </button>
-      <div className="absolute md:hidden">
+      <div className="absolute lg:hidden">
         <div className={clsx(
           'm-0 py-20 fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center transform',
           isOpened ? 'translate-x-0' : 'translate-x-full',
@@ -59,7 +61,15 @@ const MobileNavigation = () => {
               </NavigationLink>
             </li>
             <li>
-              <CategorySelect />
+              <CategorySelect className="max-w-180" />
+            </li>
+            <li>
+              <ExternalLink
+                href={DROPBOX_STUDY_NOTES_LINK}
+                className="transition duration-300 ease-in-out hover:opacity-70"
+              >
+                <FormattedMessage id="app.studyNotes" />
+              </ExternalLink>
             </li>
             <li>
               <NavigationLink href="/videos">
@@ -78,7 +88,7 @@ const MobileNavigation = () => {
           <button
             type="button"
             onClick={onToggleMenu}
-            className="flex md:hidden"
+            className="flex lg:hidden"
             aria-label={formatMessage({ id: 'app.closeMenu' })}
           >
             <FontAwesomeIcon

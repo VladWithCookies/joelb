@@ -10,6 +10,7 @@ export default {
     'app.language': 'Jazyk',
     'app.openMenu': 'Otevřete nabídku',
     'app.closeMenu': 'Zavřít nabídku',
+    'app.studyNotes': 'Studijní poznámky ',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Předchozí',

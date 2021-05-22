@@ -1,8 +1,10 @@
 import { FormattedMessage } from 'react-intl';
 
+import { DROPBOX_STUDY_NOTES_LINK } from 'constants/base';
 import LanguageSelect from './LanguageSelect';
 import CategorySelect from './CategorySelect';
 import NavigationLink from './NavigationLink';
+import ExternalLink from './ExternalLink';
 
 const Navigation = ({ className }) => (
   <ul className={className}>
@@ -13,6 +15,14 @@ const Navigation = ({ className }) => (
     </li>
     <li className="mr-10">
       <CategorySelect />
+    </li>
+    <li className="mr-10">
+      <ExternalLink
+        href={DROPBOX_STUDY_NOTES_LINK}
+        className="transition duration-300 ease-in-out hover:opacity-70"
+      >
+        <FormattedMessage id="app.studyNotes" />
+      </ExternalLink>
     </li>
     <li className="mr-10">
       <NavigationLink href="/videos">

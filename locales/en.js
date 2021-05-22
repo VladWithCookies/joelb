@@ -10,6 +10,7 @@ export default {
     'app.language': 'Language',
     'app.openMenu': 'Open menu',
     'app.closeMenu': 'Close menu',
+    'app.studyNotes': 'Study notes',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',

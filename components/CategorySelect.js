@@ -14,7 +14,7 @@ const CategorySelect = ({ className }) => {
   const [category, setCategory] = useState(query.category);
 
   useEffect(() => {
-    setCategory(query.category);
+    setCategory(query.category || '');
   }, [query.category]);
 
   const categories = get(response, ['data', 'categoryCollection', 'items']);
