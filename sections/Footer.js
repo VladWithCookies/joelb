@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 
-import { DROPBOX_STUDY_NOTES_LINK } from 'constants/base';
+import { DROPBOX_STUDY_NOTES_LINK, DROPBOX_PHOTOS_LINK } from 'constants/base';
 import Legal from 'components/Legal';
 import Credits from 'components/Credits';
 import Contacts from 'components/Contacts';
@@ -32,6 +32,14 @@ const Footer = () => (
                 className="transition duration-300 ease-in-out hover:opacity-70"
               >
                 <FormattedMessage id="app.studyNotes" />
+              </ExternalLink>
+            </li>
+            <li className="mr-10">
+              <ExternalLink
+                href={DROPBOX_PHOTOS_LINK}
+                className="transition duration-300 ease-in-out hover:opacity-70"
+              >
+                <FormattedMessage id="app.photos" />
               </ExternalLink>
             </li>
             <li>

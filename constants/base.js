@@ -3,8 +3,7 @@ export const CLIENT_URL = 'https://joel-baker.vercel.app';
 
 export const CREDITS_LINK = 'https://vladwithcookies.github.io/';
 export const DROPBOX_STUDY_NOTES_LINK = 'https://www.dropbox.com/sh/aoxi9mjeuw2bm9x/AAB-DGsHw8mGim6A0M3QHi9La';
-
-export const CURRENT_YEAR = new Date().getFullYear();
+export const DROPBOX_PHOTOS_LINK = 'https://www.dropbox.com/sh/o8z2pri9chm9yc6/AACp9qKGMvd-PgTQSZH6PFRea';
 
 export const PAGINATION_LIMIT = 6;
 

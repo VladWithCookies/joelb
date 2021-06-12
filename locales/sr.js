@@ -11,6 +11,7 @@ export default {
     'app.openMenu': 'Otvori meni',
     'app.closeMenu': 'Zatvori meni',
     'app.studyNotes': 'Studije napomene',
+    'app.photos': 'Fotografije',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prethodne',

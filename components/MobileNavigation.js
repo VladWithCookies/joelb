@@ -6,7 +6,7 @@ import { FormattedMessage } from 'react-intl';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { DROPBOX_STUDY_NOTES_LINK } from 'constants/base';
+import { DROPBOX_STUDY_NOTES_LINK, DROPBOX_PHOTOS_LINK } from 'constants/base';
 import CategorySelect from './CategorySelect';
 import LanguageSelect from './LanguageSelect';
 import NavigationLink from './NavigationLink';
@@ -69,6 +69,14 @@ const MobileNavigation = () => {
                 className="transition duration-300 ease-in-out hover:opacity-70"
               >
                 <FormattedMessage id="app.studyNotes" />
+              </ExternalLink>
+            </li>
+            <li>
+              <ExternalLink
+                href={DROPBOX_PHOTOS_LINK}
+                className="transition duration-300 ease-in-out hover:opacity-70"
+              >
+                <FormattedMessage id="app.photos" />
               </ExternalLink>
             </li>
             <li>
