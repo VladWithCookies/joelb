@@ -2,7 +2,7 @@ export default {
   locale: 'en',
   messages: {
     'app.joelBakerMinistry': 'Joel Baker Ministry',
-    'app.madeWithLoveBy': 'Made with love by',
+    'app.madeWithLoveBy': 'Made with love in',
     'app.terms': 'Terms',
     'app.privacyPolicy': 'Privacy Policy',
     'app.allCategories': 'All Categories',

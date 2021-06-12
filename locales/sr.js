@@ -2,7 +2,7 @@ export default {
   locale: 'sr',
   messages: {
     'app.joelBakerMinistry': 'Služba Džoela Bejkera',
-    'app.madeWithLoveBy': 'Napravljeno s ljubavlju od',
+    'app.madeWithLoveBy': 'Napravljeno s ljubavlju u',
     'app.terms': 'Uslovi korišćenja',
     'app.privacyPolicy': 'Pravila o privatnosti',
     'app.allCategories': 'Sve kategorije',

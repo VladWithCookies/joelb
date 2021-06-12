@@ -2,7 +2,7 @@ export default {
   locale: 'cs',
   messages: {
     'app.joelBakerMinistry': 'Joel Baker Ministry',
-    'app.madeWithLoveBy': 'Vyrobeno s láskou podle',
+    'app.madeWithLoveBy': 'Vyrobeno s láskou v',
     'app.terms': 'Podmínky použití',
     'app.privacyPolicy': 'Ochrana údajů',
     'app.allCategories': 'Všechny kategorie',
