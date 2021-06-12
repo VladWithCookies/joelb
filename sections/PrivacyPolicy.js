@@ -366,7 +366,7 @@ const PrivacyPolicy = () => (
         Contact Us
       </h1>
       <p className="mt-2">
-        If you have any questions about this Privacy Policy, You can contact us by email: <ExternalLink href="mailto:bakersjn@hotmail.com">bakersjn@hotmail.com</ExternalLink>
+        If you have any questions about this Privacy Policy, You can contact us by email: <ExternalLink href="mailto:bakersjn@gmail.com">bakersjn@gmail.com</ExternalLink>
       </p>
     </div>
   </section>

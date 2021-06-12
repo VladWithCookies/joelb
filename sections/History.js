@@ -12,7 +12,7 @@ const History = () => (
       image="/bakers.jpg"
       alt="Joel and Nicole Baker"
     >
-      <FormattedMessage id="about.nicolaAnJoelOwe" />
+      <FormattedMessage id="about.nicolaAndJoelOwe" />
     </Jumbotron>
     <Jumbotron
       reversed

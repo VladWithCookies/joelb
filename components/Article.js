@@ -27,7 +27,7 @@ const Article = ({
         <div className="relative w-full h-72">
           <Image
             src={cover.url}
-            preload
+            priority
             alt=""
           />
         </div>
