@@ -16,6 +16,7 @@ const Main = ({ title, translations, socials, isNotFound, children }) => {
         <title>{title} | Joel Baker Ministry</title>
         <meta name="author" content="Vlad V" />
         <meta name="description" content="We share with you freely 40 years of Bible study notes, articles and videos!" />
+        <meta name="google-site-verification" content="j5UML0AbfNmNx9pO0_3ZmDEHDQyW7zyy7JmZHR57E6M" />
         {map(socials, (social, index) => (
           <meta key={index} {...social} />
         ))}
