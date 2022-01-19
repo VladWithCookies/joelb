@@ -2,7 +2,6 @@ import { FormattedMessage } from 'react-intl';
 
 import { DROPBOX_STUDY_NOTES_LINK, DROPBOX_PHOTOS_LINK } from 'constants/base';
 import Legal from 'components/Legal';
-import Credits from 'components/Credits';
 import Contacts from 'components/Contacts';
 import Copyright from 'components/Copyright';
 import NavigationLink from 'components/NavigationLink';
@@ -64,7 +63,6 @@ const Footer = () => (
         <Contacts className="mt-8 lg:mt-0" />
       </div>
       <div className="flex flex-col items-center">
-        <Credits />
         <Copyright className="mt-8" />
       </div>
     </div>
