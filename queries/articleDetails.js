@@ -25,6 +25,7 @@ export default graphql`
           en
           sr
           cs
+          uk
         }
         cover {
           url(transform:{ height: 1200, width: 1600 })

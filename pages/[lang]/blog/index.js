@@ -36,6 +36,7 @@ const IndexPage = () => {
     { href: '/en/blog', hreflang: 'en-us' },
     { href: '/en/blog', hreflang: 'en-gb' },
     { href: '/cs/blog', hreflang: 'cs-cz' },
+    { href: '/uk/blog', hreflang: 'uk-ua' }
   ];
 
   const socials = [

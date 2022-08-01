@@ -23,6 +23,7 @@ const ArticlePage = () => {
     { href: `/en/blog/${slug}`, hreflang: 'en-us' },
     { href: `/en/blog/${slug}`, hreflang: 'en-gb' },
     { href: `/cs/blog/${slug}`, hreflang: 'cs-cz' },
+    { href: `/uk/blog/${slug}`, hreflang: 'uk-ua' },
   ];
 
   const socials = [

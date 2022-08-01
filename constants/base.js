@@ -10,4 +10,5 @@ export const PAGINATION_LIMIT = 6;
 export const EN_LANGUAGE = 'en';
 export const CS_LANGUAGE = 'cs';
 export const SR_LANGUAGE = 'sr';
-export const AVAILABLE_LANGUAGES = [EN_LANGUAGE, CS_LANGUAGE, SR_LANGUAGE];
+export const UK_LANGUAGE = 'uk';
+export const AVAILABLE_LANGUAGES = [EN_LANGUAGE, CS_LANGUAGE, SR_LANGUAGE, UK_LANGUAGE];
