@@ -2,13 +2,30 @@ import graphql from 'graphql-tag';
 
 export default graphql`
   query articleDetails($slug: String!) {
-    articleCollection(where: { slug: $slug }) {
+    articleCollection(where: { slug: $slug }, limit: 10) {
       items {
         date
         title
         description
         content {
           json
+          links {
+            entries {
+              block {
+                sys {
+                  id
+                }
+              }
+            }
+            assets {
+              block {
+                sys {
+                  id
+                }
+                url
+              }
+            }
+          }
         }
         author {
           name
