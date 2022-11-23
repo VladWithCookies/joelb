@@ -23,6 +23,8 @@ export default graphql`
                   id
                 }
                 url
+                height
+                width
               }
             }
           }

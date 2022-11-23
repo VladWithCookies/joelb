@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/image'
 import { useMemo } from 'react';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -14,9 +15,16 @@ const Content = ({ content, className }) => {
     return {
       renderNode: {
         [BLOCKS.EMBEDDED_ASSET]: (node) => {
-          const asset = assets.get(node.data.target.sys.id);
+          const { url, height, width } = assets.get(node.data.target.sys.id);
 
-          return <img src={asset.url} alt="" />;
+          return (
+            <Image
+              src={url}
+              height={height}
+              width={width}
+              alt=""
+            />
+          );
         }
       }
     };
