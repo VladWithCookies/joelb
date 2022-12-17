@@ -7,7 +7,7 @@ class CustomDocument extends Document {
         <Head>
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
-        <body>
+        <body className="dark:text-gray-200">
           <Main />
           <NextScript />
         </body>

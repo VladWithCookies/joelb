@@ -8,7 +8,7 @@ import NavigationLink from 'components/NavigationLink';
 import ExternalLink from 'components/ExternalLink';
 
 const Footer = () => (
-  <footer className="bg-black text-white">
+  <footer className="bg-black dark:bg-gray-900 text-white">
     <div className="container mx-auto px-4">
       <div className="py-8">
         <FormattedMessage id="app.joelBakerMinistry" />

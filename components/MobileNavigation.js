@@ -50,7 +50,7 @@ const MobileNavigation = () => {
       </button>
       <div className="absolute lg:hidden">
         <div className={clsx(
-          'm-0 py-20 fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center transform',
+          'm-0 py-20 fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 flex flex-col items-center transform',
           isOpened ? 'translate-x-0' : 'translate-x-full',
           { 'transition-transform duration-300': isOpened !== undefined },
         )}>
@@ -61,7 +61,7 @@ const MobileNavigation = () => {
               </NavigationLink>
             </li>
             <li>
-              <CategorySelect className="max-w-180" />
+              <CategorySelect className="max-w-[180px]" />
             </li>
             <li>
               <ExternalLink

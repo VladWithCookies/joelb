@@ -12,7 +12,7 @@ const Select = ({
     value={value}
     onChange={onChange}
     aria-label={ariaLabel}
-    className={clsx('cursor-pointer bg-transparent', className)}
+    className={clsx('cursor-pointer bg-transparent dark:bg-chevron-down-dark', className)}
   >
     {map(options, ({ value, label }) => (
       <option

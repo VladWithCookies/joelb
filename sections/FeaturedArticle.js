@@ -40,7 +40,7 @@ const FeaturedArticle = ({ data, loading }) => {
                 alt=""
               />
             </div>
-            <div className="flex flex-col justify-between bg-white h-72 p-4 md:h-96 md:p-8">
+            <div className="flex flex-col justify-between bg-white dark:bg-gray-900 h-72 p-4 md:h-96 md:p-8">
               <div>
                 <Meta>
                   {category[lang]} | <FormattedDate value={date} month="short" day="numeric" year="numeric" />
