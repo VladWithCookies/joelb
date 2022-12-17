@@ -8,7 +8,7 @@ const Contacts = ({ className }) => (
     <li>
       <a
         href="mailto:bakersjn@gmail.com"
-        className="underline cursor-pointer"
+        className="underline cursor-pointer dark:text-white"
       >
         <FontAwesomeIcon
           className="mr-2"

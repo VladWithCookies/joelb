@@ -23,7 +23,7 @@ const Article = ({
 
   return (
     <Link href={`/blog/${slug}`}>
-      <article className="bg-white cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg">
+      <article className="bg-white dark:bg-gray-900 cursor-pointer shadow-sm transition duration-300 ease-in-out hover:shadow-lg">
         <div className="relative w-full h-72">
           <Image
             src={cover.url}

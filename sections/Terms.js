@@ -196,7 +196,7 @@ const Terms = () => (
         Contact Us
       </h1>
       <p className="mt-2">
-        If you have any questions about these Terms and Conditions, You can contact us by email: <a href="mailto:bakersjn@gmail.com" className="text-indigo-900">bakersjn@gmail.com</a>
+        If you have any questions about these Terms and Conditions, You can contact us by email: <a href="mailto:bakersjn@gmail.com" className="text-indigo-900 underline dark:text-white">bakersjn@gmail.com</a>
       </p>
     </div>
   </section>

@@ -8,7 +8,7 @@ const ExternalLink = ({ href, children, ...props }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={clsx('cursor-pointer', className)}
+      className={clsx('cursor-pointer dark:text-white', className)}
     >
       {children}
     </a>

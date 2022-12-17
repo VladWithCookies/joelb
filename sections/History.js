@@ -17,7 +17,7 @@ const History = () => (
     <Jumbotron
       reversed
       image="/kamenari.jpg"
-      className="bg-white"
+      className="bg-white dark:bg-gray-700"
       alt="View of Bay of Kotor fron Kamenari village"
     >
       <FormattedMessage
@@ -64,7 +64,7 @@ const History = () => (
     <Jumbotron
       reversed
       image="/bible.jpg"
-      className="bg-white"
+      className="bg-white dark:bg-gray-700"
       alt="Bible"
     >
       <FormattedMessage id="about.forThisPurpose" />
