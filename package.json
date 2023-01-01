@@ -16,7 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "clsx": "^1.2.1",
     "graphql": "^15.5.0",
-    "graphql-tag": "^2.11.0",
+    "graphql-tag": "^2.12.6",
     "lodash": "^4.17.21",
     "next": "^12.2.0",
     "next-apollo": "^5.0.8",
