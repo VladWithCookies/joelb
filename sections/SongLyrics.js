@@ -13,13 +13,11 @@ const SongLyrics = ({ data, loading }) => {
   } = data;
 
   return (
-    <section className="mx-auto my-8">
-      <div className="container px-4 py-8">
-        <h1 className="text-4xl">
-          {title}
-        </h1>
-        <Content content={lyrics} />
-      </div>
+    <section className="container mx-auto px-4 my-8">
+      <h1 className="text-4xl">
+        {title}
+      </h1>
+      <Content content={lyrics} />
     </section>
   )
 };

@@ -9,27 +9,25 @@ const Songs = ({ data, loading }) => {
   const { songCollection: { items } } = data;
 
   return (
-    <section className="mx-auto my-8">
-      <div className="container px-4 py-8">
-        <h1 className="text-4xl">
-          <FormattedMessage id="songs.songs" />
-        </h1>
-        <ul>
-          {map(items, ({ title, number }) => (
-            <li
-              key={number}
-              className="mt-4"
+    <section className="container mx-auto px-4 my-8">
+      <h1 className="text-4xl">
+        <FormattedMessage id="songs.songs" />
+      </h1>
+      <ul>
+        {map(items, ({ title, number }) => (
+          <li
+            key={number}
+            className="mt-4"
+          >
+            <NavigationLink
+              href={`/songs/${number}`}
+              className="text-2xl underline"
             >
-              <NavigationLink
-                href={`/songs/${number}`}
-                className="text-2xl underline"
-              >
-                {`#${number} ${title}`}
-              </NavigationLink>
-            </li>
-          ))}
-        </ul>
-      </div>
+              {`#${number} ${title}`}
+            </NavigationLink>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
