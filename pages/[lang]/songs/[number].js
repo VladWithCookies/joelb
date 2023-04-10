@@ -10,10 +10,10 @@ import SongLyrics from 'sections/SongLyrics';
 const SongPage = () => {
   const { query: { number } } = useRouter();
   const response = useQuery(SONGS_LYRICS, { variables: { number: Number(number) } });
-  const name = get(response, ['data', 'songCollection', 'items', 0, 'name']);
+  const title = get(response, ['data', 'songCollection', 'items', 0, 'title']);
 
   return (
-    <Main title={name}>
+    <Main title={title}>
       <SongLyrics {...response} />
     </Main>
   );
