@@ -22,7 +22,7 @@ const Songs = ({ data, loading }) => {
             >
               <NavigationLink
                 href={`/songs/${number}`}
-                className="text-2xl text-indigo-900"
+                className="text-2xl underline"
               >
                 {`#${number} ${title}`}
               </NavigationLink>
