@@ -12,6 +12,7 @@ export default {
     'app.closeMenu': 'Close menu',
     'app.studyNotes': 'Study notes',
     'app.photos': 'Photos',
+    'app.songs': 'Songs',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',

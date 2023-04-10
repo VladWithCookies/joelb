@@ -12,6 +12,7 @@ export default {
     'app.closeMenu': 'Zavřít nabídku',
     'app.studyNotes': 'Studijní poznámky ',
     'app.photos': 'Fotky',
+    'app.songs': 'Písně',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Předchozí',

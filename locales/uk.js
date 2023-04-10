@@ -12,6 +12,7 @@ export default {
     'app.closeMenu': 'Закрити меню',
     'app.studyNotes': 'Учбові Нотаки',
     'app.photos': 'Фото',
+    'app.songs': 'Пісні',
 
     'blog.blog': 'Блог',
     'blog.prevPosts': 'Попередня',

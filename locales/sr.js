@@ -12,6 +12,7 @@ export default {
     'app.closeMenu': 'Zatvori meni',
     'app.studyNotes': 'Studije napomene',
     'app.photos': 'Fotografije',
+    'app.songs': 'Pesme',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prethodne',

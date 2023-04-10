@@ -1,5 +1,4 @@
-import { useIntl } from 'react-intl';
-import { FormattedMessage } from 'react-intl';
+import { useIntl, FormattedMessage } from 'react-intl';
 
 import Main from 'layouts/Main';
 import withApollo from 'lib/apolloClient';
