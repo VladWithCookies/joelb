@@ -5,6 +5,8 @@ export default graphql`
     songCollection(where: { number: $number }, limit: 10) {
       items {
         title
+        number
+        youTubeUrl
         lyrics {
           json
           links {
