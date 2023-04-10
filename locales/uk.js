@@ -2,9 +2,6 @@ export default {
   locale: 'uk',
   messages: {
     'app.joelBakerMinistry': 'Служіння Джоеля Бейкера',
-    'app.madeWithLoveBy': 'Вироблено з любов\'ю у',
-    'app.terms': 'Умови Користування',
-    'app.privacyPolicy': 'Політика Приватності',
     'app.allCategories': 'Всі Категорії',
     'app.category': 'Категорія',
     'app.language': 'Мова',
@@ -12,7 +9,6 @@ export default {
     'app.closeMenu': 'Закрити меню',
     'app.studyNotes': 'Учбові Нотаки',
     'app.photos': 'Фото',
-    'app.songs': 'Пісні',
 
     'blog.blog': 'Блог',
     'blog.prevPosts': 'Попередня',
@@ -34,6 +30,12 @@ export default {
     'about.weBelieveThatTheWhole': 'Ми віримо, що вся Біблія є натхненним Словом Божим ({link}).',
     'about.weBelieveInThePersonal': 'Ми віримо в особисте спасіння віруючих лише вірою в пролиту кров Ісуса ({link1}, {link2}).',
     'about.weBelieveInTheSanctifying': 'Ми віримо в освячуючу дію Слова Божого і Святого Духа. Освячення виявляється у святості, чистоті та цілісності серця та життя ({link}).',
-    'about.weBelieveThatGod': 'Ми віримо, що Бог і сьогодні зцілює через віру в ім’я Ісуса, і зцілення є частиною викуплення, за яке заплатив Ісус ({link1}; {link2}).'
+    'about.weBelieveThatGod': 'Ми віримо, що Бог і сьогодні зцілює через віру в ім’я Ісуса, і зцілення є частиною викуплення, за яке заплатив Ісус ({link1}; {link2}).',
+
+    'terms.terms': 'Умови Користування',
+
+    'privacyPolicy.privacyPolicy': 'Політика Приватності',
+
+    'songs.songs': 'Пісні',
   },
 };

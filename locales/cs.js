@@ -2,9 +2,6 @@ export default {
   locale: 'cs',
   messages: {
     'app.joelBakerMinistry': 'Joel Baker Ministry',
-    'app.madeWithLoveBy': 'Vyrobeno s láskou v',
-    'app.terms': 'Podmínky použití',
-    'app.privacyPolicy': 'Ochrana údajů',
     'app.allCategories': 'Všechny kategorie',
     'app.category': 'Kategorie',
     'app.language': 'Jazyk',
@@ -12,7 +9,6 @@ export default {
     'app.closeMenu': 'Zavřít nabídku',
     'app.studyNotes': 'Studijní poznámky ',
     'app.photos': 'Fotky',
-    'app.songs': 'Písně',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Předchozí',
@@ -35,5 +31,11 @@ export default {
     'about.weBelieveInThePersonal': 'Věříme v osobní spasení věřících vírou v prolitou krev Ježíše \n ({link1}, {link2}).',
     'about.weBelieveInTheSanctifying': 'Věříme v posvěcující vliv Božího Slova a Ducha Svatého. Toto posvěcení vidíme ve svatosti, čistotě a bezúhonnosti srdce a života ({link}).',
     'about.weBelieveThatGod': 'Věříme, že Bůh stále uzdravuje i dnes skrze víru ve jméno Ježíše; uzdravení, za které Ježíš zaplatil, je součástí vykoupení ({link1}; {link2}).',
+
+    'terms.terms': 'Podmínky použití',
+
+    'privacyPolicy.privacyPolicy': 'Ochrana údajů',
+
+    'songs.songs': 'Písně',
   },
 };

@@ -2,9 +2,6 @@ export default {
   locale: 'en',
   messages: {
     'app.joelBakerMinistry': 'Joel Baker Ministry',
-    'app.madeWithLoveBy': 'Made with love in',
-    'app.terms': 'Terms',
-    'app.privacyPolicy': 'Privacy Policy',
     'app.allCategories': 'All Categories',
     'app.category': 'Category',
     'app.language': 'Language',
@@ -12,7 +9,6 @@ export default {
     'app.closeMenu': 'Close menu',
     'app.studyNotes': 'Study notes',
     'app.photos': 'Photos',
-    'app.songs': 'Songs',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prev posts',
@@ -35,5 +31,11 @@ export default {
     'about.weBelieveInThePersonal': 'We believe in the personal salvation of believers by faith alone in the shed blood of Jesus \n ({link1}, {link2}).',
     'about.weBelieveInTheSanctifying': 'We believe in the sanctifying effect of the Word of God and the Holy Spirit. Sanctification is seen in holiness, purity and integrity of heart and life ({link}).',
     'about.weBelieveThatGod': 'We believe that God still heals today through faith in the name of Jesus; and healing is a part of the redemption that Jesus paid for ({link1}; {link2}).',
+
+    'terms.terms': 'Terms',
+
+    'privacyPolicy.privacyPolicy': 'Privacy Policy',
+
+    'songs.songs': 'Songs',
   },
 };

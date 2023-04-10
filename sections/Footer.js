@@ -1,7 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 
 import { DROPBOX_STUDY_NOTES_LINK, DROPBOX_PHOTOS_LINK } from 'constants/base';
-import Legal from 'components/Legal';
 import Contacts from 'components/Contacts';
 import Copyright from 'components/Copyright';
 import NavigationLink from 'components/NavigationLink';
@@ -51,14 +50,33 @@ const Footer = () => (
             </li>
             <li>
               <NavigationLink
+                href="/songs"
+                className="mr-10"
+              >
+                <FormattedMessage id="songs.songs" />
+              </NavigationLink>
+            </li>
+          </ul>
+          <ul className="w-1/2">
+            <li>
+              <NavigationLink
                 href="/about"
                 className="mr-10"
               >
                 <FormattedMessage id="about.about" />
               </NavigationLink>
             </li>
+            <li>
+              <NavigationLink href="/terms">
+                <FormattedMessage id="terms.terms" />
+              </NavigationLink>
+            </li>
+            <li>
+              <NavigationLink href="/privacy-policy">
+                <FormattedMessage id="privacyPolicy.privacyPolicy" />
+              </NavigationLink>
+            </li>
           </ul>
-          <Legal className="w-1/2" />
         </div>
         <Contacts className="mt-8 lg:mt-0" />
       </div>

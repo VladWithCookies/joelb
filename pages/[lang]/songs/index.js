@@ -11,7 +11,7 @@ const SongsPage = () => {
   const response = useQuery(SONGS);
 
   return (
-    <Main title={formatMessage({ id: 'app.songs' })}>
+    <Main title={formatMessage({ id: 'songs.songs' })}>
       <Songs {...response} />
     </Main>
   );

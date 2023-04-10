@@ -2,9 +2,6 @@ export default {
   locale: 'sr',
   messages: {
     'app.joelBakerMinistry': 'Služba Džoela Bejkera',
-    'app.madeWithLoveBy': 'Napravljeno s ljubavlju u',
-    'app.terms': 'Uslovi korišćenja',
-    'app.privacyPolicy': 'Pravila o privatnosti',
     'app.allCategories': 'Sve kategorije',
     'app.category': 'Kategorija',
     'app.language': 'Jezik',
@@ -12,7 +9,6 @@ export default {
     'app.closeMenu': 'Zatvori meni',
     'app.studyNotes': 'Studije napomene',
     'app.photos': 'Fotografije',
-    'app.songs': 'Pesme',
 
     'blog.blog': 'Blog',
     'blog.prevPosts': 'Prethodne',
@@ -35,5 +31,11 @@ export default {
     'about.weBelieveInThePersonal': 'Vjerujemo u lično spasenje samom vjerom u prolivenu krv Isusovu ({link1}; {link2}).',
     'about.weBelieveInTheSanctifying': 'Vjerujemo u svetost Riječi Božije i Duha Svetog. Svetost se vidi u vjeri, čistoti i jedinstvu srca i života ({link}).',
     'about.weBelieveThatGod': 'Vjerujemo da Bog i danas liječi kroz vjeru u Isusovo ime; a iscjeljenje je dio iskupljenja koje je platio Isus ({link2}; {link1}).',
+
+    'terms.terms': 'Uslovi korišćenja',
+
+    'privacyPolicy.privacyPolicy': 'Pravila o privatnosti',
+
+    'songs.songs': 'Pesme',
   },
 };

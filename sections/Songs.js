@@ -12,7 +12,7 @@ const Songs = ({ data, loading }) => {
     <section className="mx-auto my-8">
       <div className="container px-4 py-8">
         <h1 className="text-4xl">
-          <FormattedMessage id="app.songs" />
+          <FormattedMessage id="songs.songs" />
         </h1>
         <ul>
           {map(items, ({ title, number }) => (
