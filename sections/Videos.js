@@ -10,9 +10,9 @@ const Videos = ({ data, loading, fetchMore }) => {
   const { videoCollection: { items, offset, total } } = data;
 
   return (
-    <section className="flex justify-center mb-16 mt-8 md:mt-6 md:my-16">
-      <div className="container px-4">
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 md:mt-6 min-h-screen">
+    <section className="flex justify-center">
+      <div className="container px-4 mb-16 mt-8 md:my-16">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-screen">
           {map(items, ({ url }) => (
             <li key={url}>
               <Video url={url} />
