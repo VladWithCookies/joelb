@@ -8,7 +8,10 @@ const TermsPage = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <Main title={formatMessage({ id: 'terms.terms' })}>
+    <Main
+      title={formatMessage({ id: 'terms.terms' })}
+      noIndex
+    >
       <Terms />
     </Main>
   );

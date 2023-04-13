@@ -7,7 +7,7 @@ import { CLIENT_URL } from 'constants/base';
 import Header from 'sections/Header';
 import Footer from 'sections/Footer';
 
-const Main = ({ title, translations, socials, isNotFound, children }) => {
+const Main = ({ title, translations, socials, isNotFound, children, noIndex }) => {
   const { asPath } = useRouter();
 
   return (
@@ -24,6 +24,7 @@ const Main = ({ title, translations, socials, isNotFound, children }) => {
         {map(translations, ({ hreflang, href }) => (
           <link key={hreflang} rel="alternate" href={`${CLIENT_URL}${href}`} hrefLang={hreflang} />
         ))}
+        {noIndex && <meta name="robots" content="noindex" />}
       </Head>
       <div className="flex flex-col h-screen">
         <Header />

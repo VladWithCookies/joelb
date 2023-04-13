@@ -26,6 +26,7 @@ const VideosPage = () => {
     <Main
       isNotFound={isNotFound}
       title={formatMessage({ id: 'videos.videos' })}
+      noIndex
     >
       <h1 hidden>
         <FormattedMessage id="videos.videos" />

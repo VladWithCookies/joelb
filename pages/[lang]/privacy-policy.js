@@ -8,7 +8,10 @@ const PrivacyPolicyPage = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <Main title={formatMessage({ id: 'privacyPolicy.privacyPolicy' })}>
+    <Main
+      title={formatMessage({ id: 'privacyPolicy.privacyPolicy' })}
+      noIndex
+    >
       <PrivacyPolicy />
     </Main>
   );

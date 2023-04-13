@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /videos
+Disallow: /terms
+Disallow: /privacy-policy
